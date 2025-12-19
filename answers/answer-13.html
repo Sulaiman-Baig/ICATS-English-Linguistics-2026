@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 13 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 13 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,325 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Lost Library Book" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) A lost library book</span></div><p class="explanation">Zara was worried because she could not find her library book.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) Under her bed, in her closet, and behind the sofa</span></div><p class="explanation">She looked in all three places.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) She would have to pay for the book</span></div><p class="explanation">"She imagined having to pay for the lost book."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) Zara had already returned it</span></div><p class="explanation">"You returned that book last week!"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: C) Relieved and amused</span></div><p class="explanation">"What a relief!" and she laughed.</p></div>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Lost Library Book" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Zara had borrowed a book from the school library three weeks ago. Now it was due, and she could not find it anywhere! She looked under her bed, in her closet, and behind the sofa. No book.</p>
+                        <p>"I will have to tell the librarian," Zara said sadly. She imagined having to pay for the lost book with all her saved pocket money.</p>
+                        <p>At school, she walked slowly to the library. "Mrs. Ahmed, I am so sorry. I lost my book," she confessed.</p>
+                        <p>Mrs. Ahmed smiled kindly. "Which book was it, dear?"</p>
+                        <p>"The Magic Tree," Zara answered.</p>
+                        <p>Mrs. Ahmed laughed gently. "Zara, you returned that book last week! You were the first one to return it on Monday. Do you not remember?"</p>
+                        <p>Zara's face turned bright red, but then she laughed too. What a relief!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What was Zara worried about?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A lost library book</div>
+                            <div class="explanation">Zara was worried because she could not find her library book.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Where did Zara look for the book?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Under her bed, in her closet, and behind the sofa</div>
+                            <div class="explanation">She looked in all three places.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What did Zara expect to happen when she told the librarian?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) She would have to pay for the book</div>
+                            <div class="explanation">"She imagined having to pay for the lost book."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">What was the truth about the book?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Zara had already returned it</div>
+                            <div class="explanation">"You returned that book last week!"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">How did Zara feel at the end of the story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Relieved and amused</div>
+                            <div class="explanation">"What a relief!" and she laughed.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "The Moon" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) A silver ball</span></div><p class="explanation">"The moon is like a silver ball."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: C) Round and thin (crescent)</span></div><p class="explanation">"Sometimes it is round, sometimes it is thin, A crescent."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: D) light</span></div><p class="explanation">"Light" rhymes with "night."</p></div>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "The Moon" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>The moon is like a silver ball,<br>
+                        Watching over one and all.<br>
+                        It glows so bright up in the night,<br>
+                        A lovely, peaceful, calming sight.</p>
+                        <p>Sometimes it is round, sometimes it is thin,<br>
+                        A crescent with a sleepy grin.<br>
+                        But whatever shape the moon may take,<br>
+                        It is there for us when we are awake.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What is the moon compared to in the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A silver ball</div>
+                            <div class="explanation">"The moon is like a silver ball."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">According to the poem, what shapes can the moon be?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Round and thin (crescent)</div>
+                            <div class="explanation">"Sometimes it is round, sometimes it is thin, A crescent."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "Stars twinkle in the sky at night, Shining with their silver ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: D) light</div>
+                            <div class="explanation">"Light" rhymes with "night."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: A) A magic show</span></div><p class="explanation">Magician, rabbit from hat, amazed children = magic show.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Singing in the choir is so much fun, and you have a beautiful voice!</span></div><p class="explanation">Persuasive - gives benefit and compliment.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 3, 4, 1, 2</span></div><p class="explanation">Drawing: First (3) drew house, Then (4) added sun/clouds, Next (1) colored, Finally (2) showed Mom.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: A) Baking is easy if you follow some simple steps.</span></div><p class="explanation">The paragraph explains baking steps.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) It is very expensive</span></div><p class="explanation">"Costs an arm and a leg" = very expensive.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) Finish his homework first</span></div><p class="explanation">"He picked up his pencil and got to work."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) "May I please have some water?" asked the child.</span></div><p class="explanation">Correct quotation marks, question mark inside, lowercase "asked."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It can change your mood and lift your spirits.</span></div><p class="explanation">This explains why music makes people happy.</p></div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Gym Class" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A student</span></div><p class="explanation">The narrator goes to gym class and gets a high five from the coach.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: C) Gym class</span></div><p class="explanation">"My favorite part of the day. Gym class!"</p></div>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? The magician pulled a rabbit out of his hat. Children gasped with amazement. Colorful balloons decorated the stage of the community center.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) A magic show</div>
+                        <div class="explanation">Magician, rabbit from hat, amazed children = magic show.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your friend to join the school choir. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Singing in the choir is so much fun, and you have a beautiful voice!</div>
+                        <div class="explanation">Persuasive - gives benefit and compliment.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Next, I colored the picture with crayons. 2. Finally, I showed my drawing to Mom. 3. First, I drew a picture of a house. 4. Then, I added a sun and some clouds.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 3, 4, 1, 2</div>
+                        <div class="explanation">Drawing: First (3) drew house, Then (4) added sun/clouds, Next (1) colored, Finally (2) showed Mom.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. First, gather all the ingredients you need. Then, follow the recipe step by step. Do not forget to preheat the oven if required. Finally, let your creation cool before eating.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) Baking is easy if you follow some simple steps.</div>
+                        <div class="explanation">The paragraph explains baking steps.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "costs an arm and a leg" mean in: Mom said the new bicycle costs an arm and a leg.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It is very expensive</div>
+                        <div class="explanation">"Costs an arm and a leg" = very expensive.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">Hamza stared at the sunny day outside his window. His friends were playing cricket in the street. But his math homework sat unfinished on the desk. He picked up his pencil and got to work. What did Hamza decide to do?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Finish his homework first</div>
+                        <div class="explanation">"He picked up his pencil and got to work."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) "May I please have some water?" asked the child.</div>
+                        <div class="explanation">Correct quotation marks, question mark inside, lowercase "asked."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? Music makes people happy. ___. For example, when I hear my favorite song, I can not help but smile and dance.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It can change your mood and lift your spirits.</div>
+                        <div class="explanation">This explains why music makes people happy.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Gym Class" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>I bounced down the hall, ready for my favorite part of the day. Gym class! I love running on the track and playing basketball with my friends.</p>
+                        <p>Today, we learned how to do cartwheels. I wobbled at first, but by the end of class, I could do one without falling. Coach Tariq gave me a high five!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A student</div>
+                            <div class="explanation">The narrator goes to gym class and gets a high five from the coach.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What is the narrator's favorite part of school?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Gym class</div>
+                            <div class="explanation">"My favorite part of the day. Gym class!"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why did the book go to the doctor? Because it had too many problems!</span></div><p class="explanation">Wordplay on "problems" - math problems in books vs health problems.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) It was great! We learned about dinosaurs in science class.</span></div><p class="explanation">A positive, engaging response with details.</p></div>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about books. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why did the book go to the doctor? Because it had too many problems!</div>
+                        <div class="explanation">Wordplay on "problems" - math problems in books vs health problems.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Aunt: How was your day at school? Child: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It was great! We learned about dinosaurs in science class.</div>
+                        <div class="explanation">A positive, engaging response with details.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +392,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

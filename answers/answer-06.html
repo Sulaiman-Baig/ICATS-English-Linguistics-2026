@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 6 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 6 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -29,7 +29,7 @@
                     <tr class="wrong-row"><td>Wrong Answer</td><td>-1</td></tr>
                     <tr class="unanswered-row"><td>Unanswered</td><td>0</td></tr>
                 </table>
-                <p><strong>Maximum Score:</strong> 60 marks (20 questions x 3 marks)</p>
+                <p><strong>Maximum Score:</strong> 60 marks (20 questions × 3 marks)</p>
             </div>
         </section>
 
@@ -59,186 +59,321 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Helpful Robot" (Q1-5)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q1</span>
-                        <span class="correct-answer">Correct Answer: C) In the year 2050</span>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Helpful Robot" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
                     </div>
-                    <p class="explanation">The story explicitly states "In the year 2050" in its opening sentence, making this a futuristic setting.</p>
+                    <div class="passage-content">
+                        <p>In the year 2050, a small robot named Beep lived with the Ahmed family. Beep was special because he loved to help. Every morning, he made breakfast. Every evening, he helped the children with homework.</p>
+                        <p>One day, Beep noticed that Grandma was sad. She missed her garden, but her old legs couldn't let her work outside anymore.</p>
+                        <p>"I have an idea!" said Beep. He built a small indoor garden with special lights. He planted all of Grandma's favorite flowers.</p>
+                        <p>When Grandma saw the garden, tears of joy rolled down her cheeks. "Thank you, Beep," she said. "You're not just helpful, you're thoughtful."</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q2</span>
-                        <span class="correct-answer">Correct Answer: A) She missed her garden but couldn't work outside</span>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">When does this story take place?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) In the year 2050</div>
+                            <div class="explanation">The story explicitly states "In the year 2050" in its opening sentence, making this a futuristic setting.</div>
+                        </div>
                     </div>
-                    <p class="explanation">The story tells us Grandma "missed her garden, but her old legs couldn't let her work outside anymore."</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q3</span>
-                        <span class="correct-answer">Correct Answer: B) He built an indoor garden for her</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Why was Grandma sad?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) She missed her garden but couldn't work outside</div>
+                            <div class="explanation">The story tells us Grandma "missed her garden, but her old legs couldn't let her work outside anymore."</div>
+                        </div>
                     </div>
-                    <p class="explanation">Beep's solution was to build "a small indoor garden with special lights" and plant all of Grandma's favorite flowers.</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q4</span>
-                        <span class="correct-answer">Correct Answer: B) Because he noticed her feelings and did something kind</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">How did Beep solve Grandma's problem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) He built an indoor garden for her</div>
+                            <div class="explanation">Beep's solution was to build "a small indoor garden with special lights" and plant all of Grandma's favorite flowers.</div>
+                        </div>
                     </div>
-                    <p class="explanation">Beep wasn't just helpful - he was thoughtful because he paid attention to Grandma's feelings and took action to make her happy.</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q5</span>
-                        <span class="correct-answer">Correct Answer: B) Helping others means paying attention to their feelings</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">Why did Grandma say Beep was "thoughtful"?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Because he noticed her feelings and did something kind</div>
+                            <div class="explanation">Beep wasn't just helpful - he was thoughtful because he paid attention to Grandma's feelings and took action to make her happy.</div>
+                        </div>
                     </div>
-                    <p class="explanation">The story teaches that true helpfulness comes from noticing how others feel and responding with kindness.</p>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What message does this story teach us?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Helping others means paying attention to their feelings</div>
+                            <div class="explanation">The story teaches that true helpfulness comes from noticing how others feel and responding with kindness.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "Seasons Change" (Q6-8)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q6</span>
-                        <span class="correct-answer">Correct Answer: C) Spring</span>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "Seasons Change" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
                     </div>
-                    <p class="explanation">The poem states "In spring the flowers start to bloom" - flowers bloom in spring.</p>
+                    <div class="passage-content">
+                        <p>In spring the flowers start to bloom,<br>
+                        The birds return and end winter's gloom.<br>
+                        Summer brings the blazing sun,<br>
+                        Time for swimming and outdoor fun.</p>
+                        <p>Autumn leaves fall red and gold,<br>
+                        The air gets crisp and slightly cold.<br>
+                        Winter wraps the world in white,<br>
+                        Snowflakes falling, what a sight!</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q7</span>
-                        <span class="correct-answer">Correct Answer: C) Leaves fall</span>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">According to the poem, when do flowers start to bloom?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Spring</div>
+                            <div class="explanation">The poem states "In spring the flowers start to bloom" - flowers bloom in spring.</div>
+                        </div>
                     </div>
-                    <p class="explanation">The poem says "Autumn leaves fall red and gold" - in autumn, leaves fall from trees.</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q8</span>
-                        <span class="correct-answer">Correct Answer: B) long</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What happens in autumn according to the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Leaves fall</div>
+                            <div class="explanation">The poem says "Autumn leaves fall red and gold" - in autumn, leaves fall from trees.</div>
+                        </div>
                     </div>
-                    <p class="explanation">"Long" rhymes with "strong" in "The winter wind blows cold and strong."</p>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "The winter wind blows cold and strong, The nights are dark and very ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) long</div>
+                            <div class="explanation">"Long" rhymes with "strong" in "The winter wind blows cold and strong."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q9</span>
-                        <span class="correct-answer">Correct Answer: B) A birthday party</span>
+                        <span class="question-text">Which picture best matches the setting? The balloons were everywhere. Children were wearing party hats and laughing. A big cake with seven candles sat on the table.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">Balloons, party hats, laughing children, and a cake with candles all indicate a birthday party.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A birthday party</div>
+                        <div class="explanation">Balloons, party hats, laughing children, and a cake with candles all indicate a birthday party.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q10</span>
-                        <span class="correct-answer">Correct Answer: B) If you share with me now, I'll share my snacks with you later!</span>
+                        <span class="question-text">You want to persuade your brother to share his toys. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This uses persuasion by offering something in return - a fair trade that benefits both siblings.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) If you share with me now, I'll share my snacks with you later!</div>
+                        <div class="explanation">This uses persuasion by offering something in return - a fair trade that benefits both siblings.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q11</span>
-                        <span class="correct-answer">Correct Answer: A) 2, 4, 3, 1</span>
+                        <span class="question-text">Put the sentences in order: 1. Finally, the butterfly flew away. 2. First, a caterpillar hatched from an egg. 3. Then, it made a cocoon around itself. 4. Next, it ate many leaves and grew bigger.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">The butterfly life cycle: First (2) caterpillar hatches, Next (4) eats leaves and grows, Then (3) makes cocoon, Finally (1) butterfly emerges.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 4, 3, 1</div>
+                        <div class="explanation">The butterfly life cycle: First (2) caterpillar hatches, Next (4) eats leaves and grows, Then (3) makes cocoon, Finally (1) butterfly emerges.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q12</span>
-                        <span class="correct-answer">Correct Answer: B) Dinosaurs are fascinating creatures from the past.</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. They lived millions of years ago. Some dinosaurs were huge, while others were as small as chickens. Scientists learn about them by studying fossils.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This topic sentence introduces the main idea - the paragraph is about interesting facts about dinosaurs.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Dinosaurs are fascinating creatures from the past.</div>
+                        <div class="explanation">This topic sentence introduces the main idea - the paragraph is about interesting facts about dinosaurs.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q13</span>
-                        <span class="correct-answer">Correct Answer: B) Amir needs to study hard</span>
+                        <span class="question-text">What does "hit the books" mean in: Amir needs to hit the books because his exams are next week.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">"Hit the books" is an idiom meaning to study hard or intensively, especially for exams.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Amir needs to study hard</div>
+                        <div class="explanation">"Hit the books" is an idiom meaning to study hard or intensively, especially for exams.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q14</span>
-                        <span class="correct-answer">Correct Answer: B) Scared and nervous</span>
+                        <span class="question-text">Rex the dog was dreaming about chasing squirrels when BANG! Fireworks lit up the night sky. Rex ran under the bed and wouldn't come out until morning. How did Rex feel about the fireworks?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">Rex ran under the bed and wouldn't come out - this shows he was scared and nervous about the fireworks.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Scared and nervous</div>
+                        <div class="explanation">Rex ran under the bed and wouldn't come out - this shows he was scared and nervous about the fireworks.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q15</span>
-                        <span class="correct-answer">Correct Answer: C) Can you help me, please?</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This has correct capitalization, a comma before "please," and a question mark at the end.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Can you help me, please?</div>
+                        <div class="explanation">This has correct capitalization, a comma before "please," and a question mark at the end.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q16</span>
-                        <span class="correct-answer">Correct Answer: B) It makes family members feel appreciated.</span>
+                        <span class="question-text">Which reason fits best? Helping at home is important. ___. For example, when I clean my room, it makes my mom happy.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This reason connects the opinion (helping at home is important) with the example (making mom happy).</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It makes family members feel appreciated.</div>
+                        <div class="explanation">This reason connects the opinion (helping at home is important) with the example (making mom happy).</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Race Day" (Q17-18)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q17</span>
-                        <span class="correct-answer">Correct Answer: C) A horse</span>
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Race Day" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
                     </div>
-                    <p class="explanation">The narrator has four legs, a jockey riding them, and "whinnied" with joy - all horse characteristics.</p>
+                    <div class="passage-content">
+                        <p>My four legs pounded against the track. The crowd was cheering, but I focused only on running. My jockey patted my neck, telling me I was doing great.</p>
+                        <p>We crossed the finish line first! A beautiful garland of flowers was placed around my neck. I whinnied with joy as cameras flashed all around me.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q18</span>
-                        <span class="correct-answer">Correct Answer: A) The narrator has four legs, a jockey, and whinnied</span>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A horse</div>
+                            <div class="explanation">The narrator has four legs, a jockey riding them, and "whinnied" with joy - all horse characteristics.</div>
+                        </div>
                     </div>
-                    <p class="explanation">These clues - four legs, having a jockey, and whinnying - all identify the narrator as a horse.</p>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator has four legs, a jockey, and whinnied</div>
+                            <div class="explanation">These clues - four legs, having a jockey, and whinnying - all identify the narrator as a horse.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q19</span>
-                        <span class="correct-answer">Correct Answer: B) What do you call a bird that is afraid to fly? A chicken!</span>
+                        <span class="question-text">You want to entertain someone with a joke about birds. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This is a kid-friendly joke playing on the double meaning of "chicken" - the bird and being scared.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) What do you call a bird that is afraid to fly? A chicken!</div>
+                        <div class="explanation">This is a kid-friendly joke playing on the double meaning of "chicken" - the bird and being scared.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q20</span>
-                        <span class="correct-answer">Correct Answer: C) I'm sorry. I'll be quieter.</span>
+                        <span class="question-text">Choose the best reply: Librarian: Please keep your voice down. People are trying to read. Student: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This is the polite, appropriate response when asked to be quiet in a library - apologizing and agreeing to be quieter.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) I'm sorry. I'll be quieter.</div>
+                        <div class="explanation">This is the polite, appropriate response when asked to be quiet in a library - apologizing and agreeing to be quieter.</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -254,5 +389,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

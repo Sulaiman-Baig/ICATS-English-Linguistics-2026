@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 15 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 15 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,319 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Class Pet" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: C) A hamster</span></div><p class="explanation">"Ms. Fatima's class had a new pet - a hamster named Peanut."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: C) Run on his wheel</span></div><p class="explanation">"Peanut loved running on his wheel at night."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) In the book corner, under desks, and behind cabinets</span></div><p class="explanation">"The class looked everywhere - in the book corner, under the desks, behind the cabinets."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) In Amina's lunchbox in her backpack</span></div><p class="explanation">"There was Peanut, curled up in her lunchbox!"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) Always lock the cage door properly</span></div><p class="explanation">"From that day on, everyone made sure to lock the cage door tightly."</p></div>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Class Pet" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Ms. Fatima's class had a new pet - a hamster named Peanut. The children took turns feeding him and cleaning his cage. Peanut loved running on his wheel at night.</p>
+                        <p>One morning, the cage door was open, and Peanut was gone! The class looked everywhere - in the book corner, under the desks, behind the cabinets. No Peanut.</p>
+                        <p>Then, little Amina heard a soft sound coming from her backpack. She opened it carefully, and there was Peanut, curled up in her lunchbox!</p>
+                        <p>"He probably smelled your sandwich," laughed Ms. Fatima.</p>
+                        <p>From that day on, everyone made sure to lock the cage door tightly. And Amina always checked her bag before leaving school!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What kind of pet did the class have?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A hamster</div>
+                            <div class="explanation">"Ms. Fatima's class had a new pet - a hamster named Peanut."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">What did Peanut love to do at night?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Run on his wheel</div>
+                            <div class="explanation">"Peanut loved running on his wheel at night."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">Where did the class look for Peanut?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) In the book corner, under desks, and behind cabinets</div>
+                            <div class="explanation">"The class looked everywhere - in the book corner, under the desks, behind the cabinets."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">Where was Peanut found?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) In Amina's lunchbox in her backpack</div>
+                            <div class="explanation">"There was Peanut, curled up in her lunchbox!"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What did the class learn from this experience?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Always lock the cage door properly</div>
+                            <div class="explanation">"From that day on, everyone made sure to lock the cage door tightly."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "Bedtime" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: C) Bedtime / Night</span></div><p class="explanation">"The stars come out, the moon appears, Time for sleep."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: B) Brush your teeth</span></div><p class="explanation">"Brush your teeth and say goodnight."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: C) asleep</span></div><p class="explanation">"Asleep" rhymes with "sheep" and fits the bedtime context.</p></div>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "Bedtime" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p class="poem-text">
+                            The stars come out, the moon appears,<br>
+                            Time for sleep, my little dears.<br>
+                            Brush your teeth and say goodnight,<br>
+                            Everything will be alright.<br><br>
+                            Snuggle deep beneath the sheets,<br>
+                            Dream of all your favorite treats.<br>
+                            Tomorrow brings a brand new day,<br>
+                            With lots of time to run and play.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What time of day is this poem about?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Bedtime / Night</div>
+                            <div class="explanation">"The stars come out, the moon appears, Time for sleep."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What should you do before sleeping according to the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Brush your teeth</div>
+                            <div class="explanation">"Brush your teeth and say goodnight."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "Close your eyes and count some sheep, Soon you will be fast ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) asleep</div>
+                            <div class="explanation">"Asleep" rhymes with "sheep" and fits the bedtime context.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: A) A pharmacy/drugstore</span></div><p class="explanation">Pharmacist, medicine bottles, colorful boxes = pharmacy.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Can we please go to the park?...</span></div><p class="explanation">Persuasive - gives reasons (perfect weather, need for exercise).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 3, 1, 4</span></div><p class="explanation">Morning routine: First woke up (2), ate breakfast (3), waited for bus (1), finally went to school (4).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Bicycles are a great way to travel.</span></div><p class="explanation">Topic sentence about bicycles matches the paragraph about bike benefits.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Sarah took on more than she can handle</span></div><p class="explanation">"Bite off more than you can chew" = taking on too many responsibilities.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) Because their crops needed water</span></div><p class="explanation">"The farmers were happy because their crops needed water."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: D) Dr. Ahmed is a great doctor.</span></div><p class="explanation">Correct: "Dr." with period, proper capitalization, ends with period.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It gives your body energy to start the day.</span></div><p class="explanation">Connects breakfast to energy and concentration.</p></div>
+            <!-- Section 3: Language Skills Q9-16 -->
+            <h4 class="section-header">Language Skills (Q9-16)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? "The pharmacist handed over the medicine bottle. Behind her were shelves full of colorful boxes and bottles. A small line of customers waited at the counter."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) A pharmacy/drugstore</div>
+                        <div class="explanation">Pharmacist, medicine bottles, colorful boxes = pharmacy.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your dad to take you to the park. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Can we please go to the park? The weather is perfect and I need fresh air and exercise!</div>
+                        <div class="explanation">Persuasive - gives reasons (perfect weather, need for exercise).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Then, I waited for the bus with my friends. 2. First, I woke up and got dressed. 3. Next, I ate breakfast and brushed my teeth. 4. Finally, the bus arrived and I went to school.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 3, 1, 4</div>
+                        <div class="explanation">Morning routine: First woke up (2), ate breakfast (3), waited for bus (1), finally went to school (4).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence: "_______. Some people use them to get to work every day. Bicycles do not need gasoline and do not cause pollution. Riding a bike is also great exercise."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Bicycles are a great way to travel.</div>
+                        <div class="explanation">Topic sentence about bicycles matches the paragraph about bike benefits.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "bite off more than you can chew" mean? "By joining five clubs, Sarah bit off more than she could chew."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Sarah took on more than she can handle</div>
+                        <div class="explanation">"Bite off more than you can chew" = taking on too many responsibilities.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">Why were the farmers happy about the rain? "The morning started bright and sunny. But by afternoon, dark clouds rolled in and rain began to fall. The farmers were happy because their crops needed water."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Because their crops needed water</div>
+                        <div class="explanation">"The farmers were happy because their crops needed water."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: D) Dr. Ahmed is a great doctor.</div>
+                        <div class="explanation">Correct: "Dr." with period, proper capitalization, ends with period.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? "Breakfast is the most important meal. _______. For example, eating breakfast helps me concentrate better in class."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It gives your body energy to start the day.</div>
+                        <div class="explanation">Connects breakfast to energy and concentration.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Garden Helper" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A bee</span></div><p class="explanation">Flies, collects nectar, has a hive, makes honey, serves a queen = bee.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator flies, collects nectar, has a hive, and makes honey</span></div><p class="explanation">All these are bee characteristics mentioned in the passage.</p></div>
+            <!-- Section 4: Reading Part 2 Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Garden Helper" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Bzzzz! I flew from flower to flower, collecting sweet nectar. The garden was full of colorful blooms today. While I work, I spread pollen that helps new flowers grow.</p>
+                        <p>My hive is waiting for me to return. The other workers and I will make delicious honey from all this nectar. The queen will be pleased!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A bee</div>
+                            <div class="explanation">Flies, collects nectar, has a hive, makes honey, serves a queen = bee.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator flies, collects nectar, has a hive, and makes honey</div>
+                            <div class="explanation">All these are bee characteristics mentioned in the passage.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why was the computer cold? It left its Windows open!</span></div><p class="explanation">A pun on "Windows" (the operating system vs. actual windows).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) I am sorry, I forgot. The permission slip is due tomorrow.</span></div><p class="explanation">Polite apology with helpful information.</p></div>
+            <!-- Section 5: Entertainment & Conversation Q19-20 -->
+            <h4 class="section-header">Entertainment & Conversation (Q19-20)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about computers. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why was the computer cold? It left its Windows open!</div>
+                        <div class="explanation">A pun on "Windows" (the operating system vs. actual windows).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Parent: "Why did you not tell me about the field trip?" Child: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) I am sorry, I forgot. The permission slip is due tomorrow.</div>
+                        <div class="explanation">Polite apology with helpful information.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +386,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

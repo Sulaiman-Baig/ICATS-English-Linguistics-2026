@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 19 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 19 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,318 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Birthday Surprise" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) Excited and expectant</span></div><p class="explanation">"She woke up expecting a big celebration."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) No one seemed to remember her birthday</span></div><p class="explanation">"Did everyone forget?" she wondered.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: C) A surprise birthday party</span></div><p class="explanation">"SURPRISE!" with family, friends, balloons, and cake.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: C) Chocolate</span></div><p class="explanation">"A giant chocolate cake filled the room."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: C) Extremely happy</span></div><p class="explanation">"Maryam's eyes filled with happy tears."</p></div>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Birthday Surprise" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Maryam was turning seven years old. She woke up expecting a big celebration, but the house was quiet. "Happy birthday," Mom said calmly, giving her a small hug.</p>
+                        <p>At breakfast, no one mentioned a party. At school, her friends seemed normal. Maryam felt disappointed. "Did everyone forget?" she wondered.</p>
+                        <p>When she came home, the house was dark. Suddenly, the lights turned on! "SURPRISE!" everyone shouted. Her whole family and all her friends were there! Balloons, streamers, and a giant chocolate cake filled the room.</p>
+                        <p>Maryam's eyes filled with happy tears. "This is the best surprise ever!"</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">How did Maryam feel when she woke up?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Excited and expectant</div>
+                            <div class="explanation">"She woke up expecting a big celebration."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Why did Maryam feel disappointed during the day?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) No one seemed to remember her birthday</div>
+                            <div class="explanation">"Did everyone forget?" she wondered.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What was the surprise?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A surprise birthday party</div>
+                            <div class="explanation">"SURPRISE!" with family, friends, balloons, and cake.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">What kind of cake did she have?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Chocolate</div>
+                            <div class="explanation">"A giant chocolate cake filled the room."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">How did Maryam feel at the end?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Extremely happy</div>
+                            <div class="explanation">"Maryam's eyes filled with happy tears."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "My Umbrella" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) Pitter, patter</span></div><p class="explanation">"Pitter, patter goes the rain."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: C) Blue</span></div><p class="explanation">"I grab my umbrella, bright and blue."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) about</span></div><p class="explanation">"About" rhymes with "out."</p></div>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "My Umbrella" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p class="poem-text">
+                            Pitter, patter goes the rain,<br>
+                            Tapping softly on my windowpane.<br>
+                            I grab my umbrella, bright and blue,<br>
+                            And splash in puddles, one and two!<br><br>
+                            The umbrella keeps me nice and dry,<br>
+                            While raindrops fall down from the sky.<br>
+                            I love the rain, I love to play,<br>
+                            Every rainy day is a special day!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What sound does the rain make in the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Pitter, patter</div>
+                            <div class="explanation">"Pitter, patter goes the rain."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What color is the umbrella?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Blue</div>
+                            <div class="explanation">"I grab my umbrella, bright and blue."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "After the rain, the sun comes out, And children play and run ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) about</div>
+                            <div class="explanation">"About" rhymes with "out."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: B) A grocery store/supermarket</span></div><p class="explanation">Cashier, groceries, carts = supermarket.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Let us play a game together!...</span></div><p class="explanation">Persuasive with enthusiasm and fairness.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 3, 1, 4, 2</span></div><p class="explanation">Camping: drove there (3), set up tent (1), collected wood (4), roasted marshmallows (2).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Here is how to cross the street safely.</span></div><p class="explanation">Topic sentence matches the safety instructions.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Something bad that turns out to be good</span></div><p class="explanation">"A blessing in disguise" = unexpected positive outcome.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) He kindly bought Ali a new ice cream</span></div><p class="explanation">Dad took him back to the ice cream shop.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: B) I have a cat named Fluffy.</span></div><p class="explanation">Correct capitalization of "I" and "Fluffy" (proper noun).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It keeps your body active and healthy.</span></div><p class="explanation">Connects outdoor play to physical activity.</p></div>
+            <!-- Section 3: Language Skills Q9-16 -->
+            <h4 class="section-header">Language Skills (Q9-16)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? "The cashier scanned the groceries while Mom put them in bags. The store was crowded with people pushing carts full of food and supplies."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A grocery store/supermarket</div>
+                        <div class="explanation">Cashier, groceries, carts = supermarket.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your sibling to play a game with you. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Let us play a game together! It will be so much fun and we can take turns picking what to play!</div>
+                        <div class="explanation">Persuasive with enthusiasm and fairness.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Then, we put the tent up. 2. Finally, we roasted marshmallows by the fire. 3. First, we drove to the campsite. 4. Next, we collected firewood.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 3, 1, 4, 2</div>
+                        <div class="explanation">Camping: drove there (3), set up tent (1), collected wood (4), roasted marshmallows (2).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence: "_______. First, you need to find a safe place to cross. Look left, then right, then left again. Wait for all cars to stop or for the signal to turn green. Walk, do not run, across the street."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Here is how to cross the street safely.</div>
+                        <div class="explanation">Topic sentence matches the safety instructions.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "a blessing in disguise" mean? "Missing the bus was a blessing in disguise because I found my lost wallet while walking."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Something bad that turns out to be good</div>
+                        <div class="explanation">"A blessing in disguise" = unexpected positive outcome.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">How did Dad respond to Ali's situation? "Tears rolled down Ali's face as his ice cream fell to the ground. Dad saw his sad face and took him back to the ice cream shop. This time, Ali held his cone very carefully!"</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) He kindly bought Ali a new ice cream</div>
+                        <div class="explanation">Dad took him back to the ice cream shop.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) I have a cat named Fluffy.</div>
+                        <div class="explanation">Correct capitalization of "I" and "Fluffy" (proper noun).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? "Playing outside is better than watching TV. _______. For example, you can run, climb, and breathe fresh air when you play outside."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It keeps your body active and healthy.</div>
+                        <div class="explanation">Connects outdoor play to physical activity.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "In the Beehive" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A worker bee</span></div><p class="explanation">Collects nectar, works with sisters, serves the queen = worker bee.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator collects nectar, makes honey, dances to communicate, and lives in a hive</span></div><p class="explanation">All worker bee characteristics.</p></div>
+            <!-- Section 4: Reading Part 2 Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "In the Beehive" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Buzz, buzz! Another busy day in the hive. I flew out at sunrise to collect nectar from the flowers in the meadow. My sisters and I work together to make honey for our queen and the whole colony.</p>
+                        <p>When I found a patch of flowers, I did a special dance to tell the others where to find them. Communication is important when you have thousands of family members!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A worker bee</div>
+                            <div class="explanation">Collects nectar, works with sisters, serves the queen = worker bee.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator collects nectar, makes honey, dances to communicate, and lives in a hive</div>
+                            <div class="explanation">All worker bee characteristics.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) What do you call a dog that does magic tricks? A Labracadabrador!</span></div><p class="explanation">A pun combining "Labrador" and "abracadabra."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) What does it look like? I will help you look for it.</span></div><p class="explanation">Helpful and caring response.</p></div>
+            <!-- Section 5: Entertainment & Conversation Q19-20 -->
+            <h4 class="section-header">Entertainment & Conversation (Q19-20)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about dogs. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) What do you call a dog that does magic tricks? A Labracadabrador!</div>
+                        <div class="explanation">A pun combining "Labrador" and "abracadabra."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Neighbor: "I am looking for my cat. Have you seen it?" You: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) What does it look like? I will help you look for it.</div>
+                        <div class="explanation">Helpful and caring response.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +385,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

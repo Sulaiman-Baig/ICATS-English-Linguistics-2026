@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 7 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 7 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,186 +59,324 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Wishing Well" (Q1-5)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q1</span>
-                        <span class="correct-answer">Correct Answer: B) People believed wishes made there came true</span>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Wishing Well" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
                     </div>
-                    <p class="explanation">The story states "People said that if you threw a coin in and made a wish, it would come true."</p>
+                    <div class="passage-content">
+                        <p>In the middle of the village stood an old well. People said that if you threw a coin in and made a wish, it would come true.</p>
+                        <p>Little Zoya had only one coin. She thought carefully about what to wish for. "I could wish for toys," she thought. "Or candy. Or a new dress."</p>
+                        <p>Then she saw old Mr. Khan struggling to carry his groceries. His back was bent, and he looked very tired.</p>
+                        <p>Zoya walked to the well, tossed her coin, and whispered, "I wish for Mr. Khan to feel better."</p>
+                        <p>The next week, the village doctor offered free checkups. Mr. Khan's health improved, and he smiled more than ever before. Zoya never knew if it was magic or coincidence, but she felt happier than any toy could make her.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q2</span>
-                        <span class="correct-answer">Correct Answer: D) Mr. Khan's health to improve</span>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What was special about the well?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) People believed wishes made there came true</div>
+                            <div class="explanation">The story states "People said that if you threw a coin in and made a wish, it would come true."</div>
+                        </div>
                     </div>
-                    <p class="explanation">Zoya whispered, "I wish for Mr. Khan to feel better" after seeing him struggling.</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q3</span>
-                        <span class="correct-answer">Correct Answer: B) She saw Mr. Khan struggling and wanted to help</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">What did Zoya wish for?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: D) Mr. Khan's health to improve</div>
+                            <div class="explanation">Zoya whispered, "I wish for Mr. Khan to feel better" after seeing him struggling.</div>
+                        </div>
                     </div>
-                    <p class="explanation">Zoya saw Mr. Khan struggling with groceries and his bent back, so she chose to help him instead of wishing for toys.</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q4</span>
-                        <span class="correct-answer">Correct Answer: C) Mr. Khan's health improved</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">Why did Zoya choose to make that wish?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) She saw Mr. Khan struggling and wanted to help</div>
+                            <div class="explanation">Zoya saw Mr. Khan struggling with groceries and his bent back, so she chose to help him instead of wishing for toys.</div>
+                        </div>
                     </div>
-                    <p class="explanation">The village doctor offered free checkups and Mr. Khan's health improved.</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q5</span>
-                        <span class="correct-answer">Correct Answer: B) Kindness and thinking of others brings true happiness</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">What happened after Zoya made her wish?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Mr. Khan's health improved</div>
+                            <div class="explanation">The village doctor offered free checkups and Mr. Khan's health improved.</div>
+                        </div>
                     </div>
-                    <p class="explanation">Zoya "felt happier than any toy could make her" - showing that helping others brings greater happiness than material things.</p>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What does this story teach us?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Kindness and thinking of others brings true happiness</div>
+                            <div class="explanation">Zoya "felt happier than any toy could make her" - showing that helping others brings greater happiness than material things.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "The Ocean" (Q6-8)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q6</span>
-                        <span class="correct-answer">Correct Answer: B) Dolphins, whales, and fish</span>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "The Ocean" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
                     </div>
-                    <p class="explanation">The poem mentions "Dolphins that dance and whales that sing, Fish of all colors."</p>
+                    <div class="passage-content">
+                        <p>The ocean is wide, the ocean is deep,<br>
+                        Full of creatures and secrets to keep.<br>
+                        Dolphins that dance and whales that sing,<br>
+                        Fish of all colors, each a beautiful thing.</p>
+                        <p>Waves that crash upon the shore,<br>
+                        Each one different from the one before.<br>
+                        The ocean calls me to come and play,<br>
+                        I could swim in its waters every day.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q7</span>
-                        <span class="correct-answer">Correct Answer: B) Sing</span>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What creatures are mentioned in the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Dolphins, whales, and fish</div>
+                            <div class="explanation">The poem mentions "Dolphins that dance and whales that sing, Fish of all colors."</div>
+                        </div>
                     </div>
-                    <p class="explanation">The poem says "whales that sing" - dolphins dance, while whales sing.</p>
-                </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q8</span>
-                        <span class="correct-answer">Correct Answer: C) hand</span>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What do the whales do according to the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Sing</div>
+                            <div class="explanation">The poem says "whales that sing" - dolphins dance, while whales sing.</div>
+                        </div>
                     </div>
-                    <p class="explanation">"Hand" rhymes with "sand" in "Seashells scattered along the sand."</p>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "Seashells scattered along the sand, I pick one up with my little ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) hand</div>
+                            <div class="explanation">"Hand" rhymes with "sand" in "Seashells scattered along the sand."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q9</span>
-                        <span class="correct-answer">Correct Answer: B) A campsite at night</span>
+                        <span class="question-text">Which picture best matches the setting? The tent was set up near the trees. Stars twinkled above as the family sat around the campfire, roasting marshmallows.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">Tent, trees, stars, campfire, and marshmallows all indicate camping at night.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A campsite at night</div>
+                        <div class="explanation">Tent, trees, stars, campfire, and marshmallows all indicate camping at night.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q10</span>
-                        <span class="correct-answer">Correct Answer: B) If I finish my homework and chores early, may I please stay up a little longer tonight?</span>
+                        <span class="question-text">You want to persuade your parents to let you stay up late. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This is persuasive because it offers responsible behavior in exchange for the request.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) If I finish my homework and chores early, may I please stay up a little longer tonight?</div>
+                        <div class="explanation">This is persuasive because it offers responsible behavior in exchange for the request.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q11</span>
-                        <span class="correct-answer">Correct Answer: A) 2, 3, 4, 1</span>
+                        <span class="question-text">Put the sentences in order: 1. Finally, the chick broke out of its shell. 2. First, the mother hen laid an egg. 3. Next, she sat on the egg to keep it warm. 4. Then, the baby inside started to grow.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">Egg cycle: First (2) hen lays egg, Next (3) sits on it, Then (4) baby grows, Finally (1) chick breaks out.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 3, 4, 1</div>
+                        <div class="explanation">Egg cycle: First (2) hen lays egg, Next (3) sits on it, Then (4) baby grows, Finally (1) chick breaks out.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q12</span>
-                        <span class="correct-answer">Correct Answer: B) Our solar system is full of amazing planets.</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. There are eight planets in our solar system. The closest planet to the sun is Mercury. The largest planet is Jupiter. Earth is the only planet known to have life.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This topic sentence introduces the paragraph about planets in our solar system.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Our solar system is full of amazing planets.</div>
+                        <div class="explanation">This topic sentence introduces the paragraph about planets in our solar system.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q13</span>
-                        <span class="correct-answer">Correct Answer: B) Mom told them firmly what she thought</span>
+                        <span class="question-text">What does "a piece of my mind" mean in: Mom gave the messy kids a piece of her mind about cleaning up.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">"Give someone a piece of your mind" means to tell them clearly and firmly what you think, usually when upset.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Mom told them firmly what she thought</div>
+                        <div class="explanation">"Give someone a piece of your mind" means to tell them clearly and firmly what you think, usually when upset.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q14</span>
-                        <span class="correct-answer">Correct Answer: B) A sudden rainstorm during playtime</span>
+                        <span class="question-text">The children were playing happily in the park when dark clouds covered the sky. Rain started pouring down, so everyone ran to the shelter laughing and splashing through puddles. What is this passage mainly about?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">The passage describes children playing when rain suddenly started - a sudden rainstorm during playtime.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A sudden rainstorm during playtime</div>
+                        <div class="explanation">The passage describes children playing when rain suddenly started - a sudden rainstorm during playtime.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q15</span>
-                        <span class="correct-answer">Correct Answer: B) Sara asked, "Can I have some water?"</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">Correct punctuation: capital letters, comma before quote, quotation marks, question mark inside quotes.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Sara asked, "Can I have some water?"</div>
+                        <div class="explanation">Correct punctuation: capital letters, comma before quote, quotation marks, question mark inside quotes.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q16</span>
-                        <span class="correct-answer">Correct Answer: B) It helps keep your body healthy.</span>
+                        <span class="question-text">Which reason fits best? Walking to school is good for you. ___. For example, it gives you exercise and fresh air.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This reason connects "walking is good for you" with the example about exercise and fresh air.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It helps keep your body healthy.</div>
+                        <div class="explanation">This reason connects "walking is good for you" with the example about exercise and fresh air.</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Surprise Visitor" (Q17-18)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q17</span>
-                        <span class="correct-answer">Correct Answer: B) A grandchild</span>
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Surprise Visitor" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
                     </div>
-                    <p class="explanation">The narrator calls the visitor "Grandma" and receives a hug - this is from a grandchild's perspective.</p>
+                    <div class="passage-content">
+                        <p>I heard a knock at the door and rushed to open it. There stood Grandma with a big suitcase and an even bigger smile!</p>
+                        <p>"Grandma! What are you doing here?" I shouted with joy.</p>
+                        <p>"Surprise! I'm staying for a whole month," she said, giving me the warmest hug.</p>
+                        <p>That night, we baked cookies together, just like old times. I fell asleep with a full tummy and an even fuller heart.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
-                        <span class="q-number">Q18</span>
-                        <span class="correct-answer">Correct Answer: C) Very happy and joyful</span>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A grandchild</div>
+                            <div class="explanation">The narrator calls the visitor "Grandma" and receives a hug - this is from a grandchild's perspective.</div>
+                        </div>
                     </div>
-                    <p class="explanation">The narrator "shouted with joy" and ended with "an even fuller heart" - clearly very happy.</p>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">How does the narrator feel about Grandma's visit?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Very happy and joyful</div>
+                            <div class="explanation">The narrator "shouted with joy" and ended with "an even fuller heart" - clearly very happy.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q19</span>
-                        <span class="correct-answer">Correct Answer: B) What's a vegetable's favorite martial art? Karate, because it's all about the "chop"!</span>
+                        <span class="question-text">You want to entertain someone with a joke about vegetables. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This is a joke using wordplay - "chop" relates to both karate and chopping vegetables.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) What's a vegetable's favorite martial art? Karate, because it's all about the "chop"!</div>
+                        <div class="explanation">This is a joke using wordplay - "chop" relates to both karate and chopping vegetables.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header">
+                <div class="learning-question-item">
+                    <div class="question-row">
                         <span class="q-number">Q20</span>
-                        <span class="correct-answer">Correct Answer: C) I'm sorry to hear that. Do you want to talk about it?</span>
+                        <span class="question-text">Choose the best reply: Friend: I'm feeling really sad today. You: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
                     </div>
-                    <p class="explanation">This shows empathy and offers support - the appropriate response to a sad friend.</p>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) I'm sorry to hear that. Do you want to talk about it?</div>
+                        <div class="explanation">This shows empathy and offers support - the appropriate response to a sad friend.</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -254,5 +392,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

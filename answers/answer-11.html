@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 11 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 11 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,106 +59,321 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Secret Garden Door" (Q1-5)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) While playing hide and seek with her cat</span></div>
-                    <p class="explanation">"While playing hide and seek with her cat Whiskers, she discovered it."</p>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Secret Garden Door" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Emma had lived in her grandmother's old house for a year, but she never noticed the small wooden door hidden behind the rose bushes. One rainy afternoon, while playing hide and seek with her cat Whiskers, she discovered it.</p>
+                        <p>The door was painted blue, though the paint was peeling. A rusty key hung from a nail nearby. Emma's heart raced as she turned the key and pushed the door open.</p>
+                        <p>Behind it was the most beautiful garden she had ever seen. Butterflies danced among colorful flowers, a small fountain bubbled in the center, and fruit trees lined the walls.</p>
+                        <p>"This was my secret garden when I was your age," said Grandmother, appearing behind her. "Now it belongs to you."</p>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: C) A rusty key</span></div>
-                    <p class="explanation">"A rusty key hung from a nail nearby."</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) A beautiful secret garden</span></div>
-                    <p class="explanation">"The most beautiful garden she had ever seen" with butterflies, flowers, fountain.</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: C) Her grandmother when she was young</span></div>
-                    <p class="explanation">"This was my secret garden when I was your age."</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: C) Excited</span></div>
-                    <p class="explanation">"Emma's heart raced" shows excitement and anticipation.</p>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">How did Emma discover the hidden door?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) While playing hide and seek with her cat</div>
+                            <div class="explanation">"While playing hide and seek with her cat Whiskers, she discovered it."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">What was hanging near the door?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A rusty key</div>
+                            <div class="explanation">"A rusty key hung from a nail nearby."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What did Emma find behind the door?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A beautiful secret garden</div>
+                            <div class="explanation">"The most beautiful garden she had ever seen" with butterflies, flowers, fountain.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">Who did the garden belong to before Emma?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Her grandmother when she was young</div>
+                            <div class="explanation">"This was my secret garden when I was your age."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What word best describes how Emma felt when she opened the door?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Excited</div>
+                            <div class="explanation">"Emma's heart raced" shows excitement and anticipation.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "Morning Song" (Q6-8)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) The rooster</span></div>
-                    <p class="explanation">"The rooster crows at break of day, Wake up, wake up."</p>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "Morning Song" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>The rooster crows at break of day,<br>
+                        Wake up, wake up, come out to play!<br>
+                        The dewdrops sparkle on the grass,<br>
+                        The morning hours quickly pass.</p>
+                        <p>Birds are singing in the trees,<br>
+                        Dancing flowers in the breeze.<br>
+                        A brand new day has just begun,<br>
+                        Full of laughter, full of fun.</p>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: C) Dewdrops</span></div>
-                    <p class="explanation">"The dewdrops sparkle on the grass."</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: C) still</span></div>
-                    <p class="explanation">"Still" rhymes with "hill" and fits "fresh and still" meaning calm.</p>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">Who wakes everyone up in the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) The rooster</div>
+                            <div class="explanation">"The rooster crows at break of day, Wake up, wake up."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What is on the grass in the morning?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Dewdrops</div>
+                            <div class="explanation">"The dewdrops sparkle on the grass."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "The sun rises high above the hill, The morning air is fresh and ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) still</div>
+                            <div class="explanation">"Still" rhymes with "hill" and fits "fresh and still" meaning calm.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: A) A bakery</span></div>
-                    <p class="explanation">Baker, white apron, tall hat, flour, eggs, butter, fresh bread smell = bakery.</p>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? The baker put on his white apron and tall hat. He took flour, eggs, and butter from the shelf. The smell of fresh bread filled the small shop.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) A bakery</div>
+                        <div class="explanation">Baker, white apron, tall hat, flour, eggs, butter, fresh bread smell = bakery.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Vegetables make you strong and give you energy to play!</span></div>
-                    <p class="explanation">Persuasive writing gives benefits to convince someone.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your friend to try vegetables. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Vegetables make you strong and give you energy to play!</div>
+                        <div class="explanation">Persuasive writing gives benefits to convince someone.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 4, 3, 1</span></div>
-                    <p class="explanation">First (2) planted, Next (4) watered, Then (3) sprout, Finally (1) flower.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Finally, it grew into a beautiful flower. 2. First, I planted a seed in the pot. 3. Then, a small green sprout appeared. 4. Next, I watered it every day.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 4, 3, 1</div>
+                        <div class="explanation">First (2) planted, Next (4) watered, Then (3) sprout, Finally (1) flower.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Octopuses are fascinating sea creatures.</span></div>
-                    <p class="explanation">Topic sentence introduces the main idea matching the details about octopuses.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. They have eight arms called tentacles. Octopuses can change color to hide from enemies. They are also very smart and can solve puzzles.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Octopuses are fascinating sea creatures.</div>
+                        <div class="explanation">Topic sentence introduces the main idea matching the details about octopuses.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Very rarely / not often</span></div>
-                    <p class="explanation">"Once in a blue moon" is an idiom meaning something happens rarely.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "once in a blue moon" mean in: We go to the fancy restaurant only once in a blue moon.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Very rarely / not often</div>
+                        <div class="explanation">"Once in a blue moon" is an idiom meaning something happens rarely.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) Because he was hungry</span></div>
-                    <p class="explanation">"Amir's stomach was growling" indicates he was hungry.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">Amir's stomach was growling during class. When he got home, he rushed to the kitchen and made his favorite peanut butter sandwich. After eating, he felt much better and could focus on his homework. Why did Amir make a sandwich when he got home?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Because he was hungry</div>
+                        <div class="explanation">"Amir's stomach was growling" indicates he was hungry.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: B) My dog likes to run, jump, and play.</span></div>
-                    <p class="explanation">Proper commas in list, capital letter, period at end.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) My dog likes to run, jump, and play.</div>
+                        <div class="explanation">Proper commas in list, capital letter, period at end.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: C) There are so many fun things to do when it rains.</span></div>
-                    <p class="explanation">This explains why rainy days are the best, matching the puddle example.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? Rainy days are the best days. ___. For example, I love jumping in puddles and hearing the raindrops on my window.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) There are so many fun things to do when it rains.</div>
+                        <div class="explanation">This explains why rainy days are the best, matching the puddle example.</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Night Watch" (Q17-18)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) An owl</span></div>
-                    <p class="explanation">Wings, big eyes for night vision, silent flight, hunts mice = owl.</p>
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Night Watch" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>The moon is bright tonight. I spread my wings and fly silently over the sleeping town. My big eyes help me see everything clearly in the dark.</p>
+                        <p>I spot a mouse moving in the field below. Dinner! I swoop down without making a sound. My hunting skills are perfect.</p>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator has wings, big eyes, flies silently, and hunts mice</span></div>
-                    <p class="explanation">All these characteristics together identify an owl.</p>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) An owl</div>
+                            <div class="explanation">Wings, big eyes for night vision, silent flight, hunts mice = owl.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator has wings, big eyes, flies silently, and hunts mice</div>
+                            <div class="explanation">All these characteristics together identify an owl.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) What did the ocean say to the beach? Nothing, it just waved!</span></div>
-                    <p class="explanation">A pun on "waved" - ocean waves and waving hello.</p>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about the ocean. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) What did the ocean say to the beach? Nothing, it just waved!</div>
+                        <div class="explanation">A pun on "waved" - ocean waves and waving hello.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) That is okay. We can celebrate together now!</span></div>
-                    <p class="explanation">A kind, understanding, and positive response to a friend's apology.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Friend: I am sorry I forgot your birthday. You: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) That is okay. We can celebrate together now!</div>
+                        <div class="explanation">A kind, understanding, and positive response to a friend's apology.</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -174,5 +389,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

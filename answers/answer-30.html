@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 30 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 30 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,318 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Thank You Project" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) Write a thank you letter</span></div><p class="explanation">"Write a thank you letter to someone who has helped you."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: C) The school janitor</span></div><p class="explanation">"Zain decided to write to the school janitor, Mr. Riaz."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) For keeping the school clean and being kind</span></div><p class="explanation">"You always keep our school clean and smile at us every morning."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: C) He had tears of happiness</span></div><p class="explanation">"When Mr. Riaz received the letter, he had tears in his eyes."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) Kindness matters, especially to those often overlooked</span></div><p class="explanation">"Kindness matters, especially to those who often go unnoticed."</p></div>
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Thank You Project" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Ms. Fatima gave her class a special assignment. "Write a thank you letter to someone who has helped you," she said.</p>
+                        <p>Some students wrote to their parents. Others wrote to teachers or coaches. Zain decided to write to the school janitor, Mr. Riaz.</p>
+                        <p>"You always keep our school clean and smile at us every morning," Zain wrote. "Thank you for making our school a happy place."</p>
+                        <p>When Mr. Riaz received the letter, he had tears in his eyes. "In twenty years, this is the first thank you letter I have ever received," he said.</p>
+                        <p>The class learned that kindness matters, especially to those who often go unnoticed.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What assignment did Ms. Fatima give?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Write a thank you letter</div>
+                            <div class="explanation">"Write a thank you letter to someone who has helped you."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Who did Zain write his letter to?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) The school janitor</div>
+                            <div class="explanation">"Zain decided to write to the school janitor, Mr. Riaz."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">Why did Zain thank Mr. Riaz?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) For keeping the school clean and being kind</div>
+                            <div class="explanation">"You always keep our school clean and smile at us every morning."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">How did Mr. Riaz react to the letter?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) He had tears of happiness</div>
+                            <div class="explanation">"When Mr. Riaz received the letter, he had tears in his eyes."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What did the class learn from this project?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Kindness matters, especially to those often overlooked</div>
+                            <div class="explanation">"Kindness matters, especially to those who often go unnoticed."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "My Schoolbag" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: C) Heavy</span></div><p class="explanation">"My schoolbag is heavy, full of things."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: B) Books, pencils, rulers, strings, erasers, crayons, scissors</span></div><p class="explanation">The poem lists all these items inside the schoolbag.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) grow</span></div><p class="explanation">"Grow" rhymes with "go."</p></div>
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "My Schoolbag" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>My schoolbag is heavy, full of things,<br>
+                        Books and pencils, rulers and strings.<br>
+                        I carry it on my back each day,<br>
+                        As I walk to school and play.</p>
+                        <p>Inside are my favorite books,<br>
+                        Notebooks filled with all my looks.<br>
+                        Erasers, crayons, scissors too,<br>
+                        Everything I need to get me through!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">How does the speaker describe the schoolbag?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Heavy</div>
+                            <div class="explanation">"My schoolbag is heavy, full of things."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What are some things inside the schoolbag?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Books, pencils, rulers, strings, erasers, crayons, scissors</div>
+                            <div class="explanation">The poem lists all these items inside the schoolbag.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "I zip it up and off I go, To school where I can learn and ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) grow</div>
+                            <div class="explanation">"Grow" rhymes with "go."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: B) An aquarium</span></div><p class="explanation">Fish in glass tanks, shark swimming overhead, guide = aquarium.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Having class outside would help us learn about nature...</span></div><p class="explanation">Persuasive writing with benefits and reasoning.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: C) 2, 3, 4, 1</span></div><p class="explanation">Space center: arrived (2), learned about astronauts (3), saw rockets (4), watched blast off (1).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Birds build amazing nests.</span></div><p class="explanation">Topic sentence about bird nests matches the paragraph.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Time seems to pass quickly</span></div><p class="explanation">"Time flies" = time passes quickly.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) It was very engaging and exciting</span></div><p class="explanation">"She couldn't put it down" - finished 200 pages in one day.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) Did you see the bird in the tree?</span></div><p class="explanation">Correct capitalization and question mark for a question.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) People trust and respect honest people.</span></div><p class="explanation">Connects to the example about parents being proud.</p></div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Ocean Journey" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: C) A whale</span></div><p class="explanation">Migrates, sings low sounds, mammal, longest journey = whale.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator migrates, sings in low sounds, is a mammal, and makes the longest journey</span></div><p class="explanation">Classic whale characteristics.</p></div>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? (Fish in glass tanks, shark swimming overhead, guide)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) An aquarium</div>
+                        <div class="explanation">Fish in glass tanks, shark swimming overhead, guide = aquarium.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your teacher to have class outside. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Having class outside would help us learn about nature firsthand. The fresh air might help us focus better too!</div>
+                        <div class="explanation">Persuasive writing with benefits and reasoning.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order (space center visit story)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) 2, 3, 4, 1</div>
+                        <div class="explanation">Space center: arrived (2), learned about astronauts (3), saw rockets (4), watched blast off (1).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence (paragraph about bird nests)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Birds build amazing nests.</div>
+                        <div class="explanation">Topic sentence about bird nests matches the paragraph.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "time flies" mean?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Time seems to pass quickly</div>
+                        <div class="explanation">"Time flies" = time passes quickly.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">What does this tell us about the book Zainab read?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It was very engaging and exciting</div>
+                        <div class="explanation">"She couldn't put it down" - finished 200 pages in one day.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Did you see the bird in the tree?</div>
+                        <div class="explanation">Correct capitalization and question mark for a question.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best with the opinion and example? (Being honest)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) People trust and respect honest people.</div>
+                        <div class="explanation">Connects to the example about parents being proud.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Ocean Journey" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>The water is warm here near the equator. I have been swimming for months with my family. We are heading to colder waters where food is plentiful.</p>
+                        <p>My baby swims close beside me. I sing to her in deep, low sounds that travel for miles through the water. Other families answer back. Together, we make the longest journey of any mammal on Earth.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A whale</div>
+                            <div class="explanation">Migrates, sings low sounds, mammal, longest journey = whale.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator migrates, sings in low sounds, is a mammal, and makes the longest journey</div>
+                            <div class="explanation">Classic whale characteristics.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why did the astronaut break up with his girlfriend? Because he needed more space!</span></div><p class="explanation">A pun on "space" (room and outer space).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) You are welcome! I wanted to help out.</span></div><p class="explanation">Polite and humble response to thanks.</p></div>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about space. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why did the astronaut break up with his girlfriend? Because he needed more space!</div>
+                        <div class="explanation">A pun on "space" (room and outer space).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Parent says "Thank you for cleaning your room without being asked."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) You are welcome! I wanted to help out.</div>
+                        <div class="explanation">Polite and humble response to thanks.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +385,51 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const passageContent = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (passageContent.style.display === 'none') {
+                passageContent.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                passageContent.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(answer => {
+                answer.style.display = 'block';
+            });
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(answer => {
+                answer.style.display = 'none';
+            });
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

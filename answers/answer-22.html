@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 22 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 22 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,318 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Science Fair" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) How music affects plant growth</span></div><p class="explanation">Sana tested classical, rock, and no music on plants.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: C) Three</span></div><p class="explanation">"She planted three identical seeds in identical pots."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) Measured the plants and recorded data</span></div><p class="explanation">"Every day, she measured their growth and recorded the data."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) The one with classical music</span></div><p class="explanation">"The plant with classical music grew the tallest!"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: C) First place</span></div><p class="explanation">"First place goes to Sana!"</p></div>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Science Fair" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Sana spent weeks working on her science fair project. She wanted to find out which type of music helped plants grow better - classical, rock, or no music at all.</p>
+                        <p>She planted three identical seeds in identical pots. One listened to classical music, one listened to rock music, and one had no music. Every day, she measured their growth and recorded the data.</p>
+                        <p>On the day of the science fair, Sana presented her findings. The plant with classical music grew the tallest! The judges were impressed with her careful research.</p>
+                        <p>"First place goes to Sana!" the announcer said. Sana beamed with pride. All her hard work had paid off.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What was Sana's science project about?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) How music affects plant growth</div>
+                            <div class="explanation">Sana tested classical, rock, and no music on plants.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">How many plants did Sana use in her experiment?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Three</div>
+                            <div class="explanation">"She planted three identical seeds in identical pots."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What did Sana do every day?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Measured the plants and recorded data</div>
+                            <div class="explanation">"Every day, she measured their growth and recorded the data."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">Which plant grew the tallest?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) The one with classical music</div>
+                            <div class="explanation">"The plant with classical music grew the tallest!"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What place did Sana win?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) First place</div>
+                            <div class="explanation">"First place goes to Sana!"</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "The Little Seed" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: C) Buried in the ground</span></div><p class="explanation">"Buried in the dark, cold ground."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: D) Spring</span></div><p class="explanation">"Spring is coming, spring is near!"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) all</span></div><p class="explanation">"All" rhymes with "tall."</p></div>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "The Little Seed" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p class="poem-text">
+                            I am a little seed, so small and round,<br>
+                            Buried in the dark, cold ground.<br>
+                            But do not worry, do not fear,<br>
+                            Spring is coming, spring is near!<br><br>
+                            The rain will water, the sun will warm,<br>
+                            I will be safe from any storm.<br>
+                            And one fine day, I will break free,<br>
+                            And grow into a beautiful tree!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">Where is the little seed?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Buried in the ground</div>
+                            <div class="explanation">"Buried in the dark, cold ground."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What season is the seed waiting for?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: D) Spring</div>
+                            <div class="explanation">"Spring is coming, spring is near!"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "My leaves will grow so green and tall, I will be the prettiest of ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) all</div>
+                            <div class="explanation">"All" rhymes with "tall."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: A) A doctor's office</span></div><p class="explanation">Nurse, temperature, health posters, doctor = medical setting.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Can we please go to the zoo?...</span></div><p class="explanation">Persuasive with reasons (see elephants, learn about animals).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 3, 1, 4, 2</span></div><p class="explanation">Halloween: decided costume (3), put on costume (1), got bucket (4), trick-or-treating (2).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Kites are fun toys that fly in the sky.</span></div><p class="explanation">Topic sentence about kites matches the paragraph.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Make people feel more comfortable</span></div><p class="explanation">"Break the ice" = ease social tension.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) The movie was touching and emotional</span></div><p class="explanation">"The story...had touched everyone's heart."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) Look at that beautiful sunset!</span></div><p class="explanation">Exclamatory sentence needs exclamation mark.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) They teach cooperation and teamwork.</span></div><p class="explanation">Connects to example of working with others in soccer.</p></div>
+            <!-- Section 3: Language Skills Q9-16 -->
+            <h4 class="section-header">Language Skills (Q9-16)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? "The nurse took my temperature while Mom held my hand. Posters about health covered the walls of the small room. The doctor would come in soon."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) A doctor's office</div>
+                        <div class="explanation">Nurse, temperature, health posters, doctor = medical setting.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your mom to take you to the zoo. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Can we please go to the zoo? I want to see the elephants and learn about different animals!</div>
+                        <div class="explanation">Persuasive with reasons (see elephants, learn about animals).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Then, I put on my costume. 2. Finally, I went trick-or-treating with my friends. 3. First, I decided to be a pirate for Halloween. 4. Next, I got my candy bucket ready.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 3, 1, 4, 2</div>
+                        <div class="explanation">Halloween: decided costume (3), put on costume (1), got bucket (4), trick-or-treating (2).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence: "_______. They come in many shapes and sizes. Some kites look like dragons or butterflies. You need wind to fly a kite properly."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Kites are fun toys that fly in the sky.</div>
+                        <div class="explanation">Topic sentence about kites matches the paragraph.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "break the ice" mean? "The new student told a joke to break the ice on his first day."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Make people feel more comfortable</div>
+                        <div class="explanation">"Break the ice" = ease social tension.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">Why were people crying at the end of the movie? "When the movie ended, almost everyone in the theater was wiping their eyes. The story about the little dog finding his way home had touched everyone's heart."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) The movie was touching and emotional</div>
+                        <div class="explanation">"The story...had touched everyone's heart."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Look at that beautiful sunset!</div>
+                        <div class="explanation">Exclamatory sentence needs exclamation mark.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? "Team sports are important for children. _______. For example, playing soccer taught me how to work with others to reach a goal."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) They teach cooperation and teamwork.</div>
+                        <div class="explanation">Connects to example of working with others in soccer.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Building the Web" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A spider</span></div><p class="explanation">Spins silk, makes web, catches flies = spider.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator spins silk, makes a web, and catches flies</span></div><p class="explanation">Classic spider characteristics.</p></div>
+            <!-- Section 4: Reading Part 2 Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Building the Web" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>I work all night long, spinning silk from my body. Round and round I go, creating my beautiful trap. The moonlight makes my web sparkle like diamonds.</p>
+                        <p>By morning, my web is complete. Now I wait patiently in the corner. A fly will come soon, and I will have breakfast. Spinning webs is hard work, but I am very good at it!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A spider</div>
+                            <div class="explanation">Spins silk, makes web, catches flies = spider.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator spins silk, makes a web, and catches flies</div>
+                            <div class="explanation">Classic spider characteristics.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why did the sun go to school? To get a little brighter!</span></div><p class="explanation">A pun on "brighter" (smarter and more luminous).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) Thank you so much, Grandma! You are the best!</span></div><p class="explanation">Grateful and loving response.</p></div>
+            <!-- Section 5: Entertainment & Conversation Q19-20 -->
+            <h4 class="section-header">Entertainment & Conversation (Q19-20)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about the sun. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why did the sun go to school? To get a little brighter!</div>
+                        <div class="explanation">A pun on "brighter" (smarter and more luminous).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Grandma: "I brought you a present!" Child: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Thank you so much, Grandma! You are the best!</div>
+                        <div class="explanation">Grateful and loving response.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +385,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

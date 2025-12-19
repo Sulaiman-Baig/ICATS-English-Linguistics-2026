@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 27 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 27 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,319 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Wrong Bus" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) It was his first day taking the bus alone</span></div><p class="explanation">"It was Farhan's first day taking the bus alone."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) He got on the wrong bus</span></div><p class="explanation">"This is the Blue Route. You need the Red Route."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) The streets looked unfamiliar</span></div><p class="explanation">"Farhan noticed the streets looked unfamiliar."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) She called the right bus and had it wait</span></div><p class="explanation">"She called the other bus and told them to wait."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) It is okay to make mistakes and ask for help</span></div><p class="explanation">"Everyone makes mistakes. The important thing is asking for help."</p></div>
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Wrong Bus" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>It was Farhan's first day taking the bus alone. He was nervous but excited. When the bus came, he hopped on and found a seat.</p>
+                        <p>After a while, Farhan noticed the streets looked unfamiliar. "Excuse me," he asked the driver, "does this bus go to Green Street?"</p>
+                        <p>"Green Street? Oh no, son, this is the Blue Route. You need the Red Route."</p>
+                        <p>Farhan felt his heart pound. But the kind driver helped him. She called the other bus and told them to wait. When they reached the next stop, the Red Route bus was waiting!</p>
+                        <p>"Thank you so much!" Farhan said.</p>
+                        <p>"No problem," smiled the driver. "Everyone makes mistakes. The important thing is asking for help."</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">Why was Farhan nervous at the beginning?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It was his first day taking the bus alone</div>
+                            <div class="explanation">"It was Farhan's first day taking the bus alone."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">What mistake did Farhan make?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) He got on the wrong bus</div>
+                            <div class="explanation">"This is the Blue Route. You need the Red Route."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">How did Farhan realize he was on the wrong bus?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) The streets looked unfamiliar</div>
+                            <div class="explanation">"Farhan noticed the streets looked unfamiliar."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">How did the bus driver help Farhan?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) She called the right bus and had it wait</div>
+                            <div class="explanation">"She called the other bus and told them to wait."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What lesson did Farhan learn?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It is okay to make mistakes and ask for help</div>
+                            <div class="explanation">"Everyone makes mistakes. The important thing is asking for help."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "The Train" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) Choo, choo and click-clack</span></div><p class="explanation">"Choo, choo" and "Click-clack on the tracks."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: C) Past mountains and through plains</span></div><p class="explanation">"Past the mountains, through the plains."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) hear</span></div><p class="explanation">"Hear" rhymes with "clear."</p></div>
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "The Train" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Choo, choo, here comes the train,<br>
+                        Through sunshine, snow, or rain.<br>
+                        It carries people far and wide,<br>
+                        Come along and take a ride!</p>
+                        <p>Past the mountains, through the plains,<br>
+                        Nothing stops the mighty trains.<br>
+                        Click-clack on the tracks so long,<br>
+                        Singing its own travel song.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What sounds does the train make?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Choo, choo and click-clack</div>
+                            <div class="explanation">"Choo, choo" and "Click-clack on the tracks."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">According to the poem, where does the train go?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Past mountains and through plains</div>
+                            <div class="explanation">"Past the mountains, through the plains."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "The train whistle blows loud and clear, It is a sound I love to ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) hear</div>
+                            <div class="explanation">"Hear" rhymes with "clear."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: B) A bakery</span></div><p class="explanation">Baker, fresh bread, oven, pastries, display case = bakery.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Join the book club with me!...</span></div><p class="explanation">Persuasive with enthusiasm and benefits.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 4, 1, 3</span></div><p class="explanation">Vet visit: took cat (2), waited (4), check-up (1), went home (3).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Microscopes are important tools for science.</span></div><p class="explanation">Topic sentence about microscopes matches the paragraph.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Do not spoil my happiness</span></div><p class="explanation">"Raining on someone's parade" = ruining their happiness.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) It was worth it for the good food</span></div><p class="explanation">"The delicious food made the wait worthwhile."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) Wow! That is the biggest cake I have ever seen!</span></div><p class="explanation">Correct exclamation marks and capitalization.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It keeps your body active and improves your mood.</span></div><p class="explanation">Connects to example about feeling energetic after walking.</p></div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Life on Eight Legs" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: C) A spider</span></div><p class="explanation">Eight legs, spins webs, eats flies = spider.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator has eight legs, spins webs, and eats flies</span></div><p class="explanation">Classic spider characteristics.</p></div>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? (Baker, fresh bread, oven, pastries)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A bakery</div>
+                        <div class="explanation">Baker, fresh bread, oven, pastries, display case = bakery.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your friend to join a book club with you. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Join the book club with me! We will discover amazing stories and have fun discussions!</div>
+                        <div class="explanation">Persuasive with enthusiasm and benefits.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order (vet visit story)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 4, 1, 3</div>
+                        <div class="explanation">Vet visit: took cat (2), waited (4), check-up (1), went home (3).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence (paragraph about microscopes)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Microscopes are important tools for science.</div>
+                        <div class="explanation">Topic sentence about microscopes matches the paragraph.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "raining on someone's parade" mean?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Do not spoil my happiness</div>
+                        <div class="explanation">"Raining on someone's parade" = ruining their happiness.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">How did the family feel about the long wait at the restaurant?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It was worth it for the good food</div>
+                        <div class="explanation">"The delicious food made the wait worthwhile."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Wow! That is the biggest cake I have ever seen!</div>
+                        <div class="explanation">Correct exclamation marks and capitalization.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best with the opinion and example? (Walking is good for you)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It keeps your body active and improves your mood.</div>
+                        <div class="explanation">Connects to example about feeling energetic after walking.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Life on Eight Legs" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>I am not a bug, even though people think so! I have eight legs, not six like insects. I spend my days spinning beautiful webs and waiting patiently.</p>
+                        <p>Some people are scared of me, but I am actually helpful. I eat mosquitoes and flies that bother humans. Think of me as a tiny helper, not a scary creature!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A spider</div>
+                            <div class="explanation">Eight legs, spins webs, eats flies = spider.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator has eight legs, spins webs, and eats flies</div>
+                            <div class="explanation">Classic spider characteristics.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) How does the man in the moon cut his hair? Eclipse it!</span></div><p class="explanation">A pun on "eclipse" and "he clips it."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) I am sure you will do great! Let us study together tonight.</span></div><p class="explanation">Supportive and helpful response to a worried friend.</p></div>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about the moon. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) How does the man in the moon cut his hair? Eclipse it!</div>
+                        <div class="explanation">A pun on "eclipse" and "he clips it."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Friend says "I am worried about the test tomorrow."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) I am sure you will do great! Let us study together tonight.</div>
+                        <div class="explanation">Supportive and helpful response to a worried friend.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +386,51 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const passageContent = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (passageContent.style.display === 'none') {
+                passageContent.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                passageContent.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(answer => {
+                answer.style.display = 'block';
+            });
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(answer => {
+                answer.style.display = 'none';
+            });
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 23 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 23 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,319 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Rainy Day Plan" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) It was raining too hard</span></div><p class="explanation">"The field trip is cancelled... It is raining too hard."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) Disappointed</span></div><p class="explanation">"The class groaned" shows they were disappointed.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) Created a classroom zoo activity</span></div><p class="explanation">"We are going to have a zoo in our classroom instead!"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) Researched animals and made presentations</span></div><p class="explanation">"Each group researched a different animal and made a presentation."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) It was even better than the real zoo</span></div><p class="explanation">"This was even better than the real zoo!" said Kamran.</p></div>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Rainy Day Plan" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>"The field trip is cancelled," announced Ms. Naheed. "It is raining too hard."</p>
+                        <p>The class groaned. They had been looking forward to visiting the zoo for weeks.</p>
+                        <p>"But," Ms. Naheed continued with a smile, "we are going to have a zoo in our classroom instead!"</p>
+                        <p>She divided the class into groups. Each group researched a different animal and made a presentation. They drew pictures, shared facts, and even made animal sounds!</p>
+                        <p>By the end of the day, everyone was laughing and learning. "This was even better than the real zoo!" said Kamran.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">Why was the field trip cancelled?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It was raining too hard</div>
+                            <div class="explanation">"The field trip is cancelled... It is raining too hard."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">How did the students feel when they heard the news?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Disappointed</div>
+                            <div class="explanation">"The class groaned" shows they were disappointed.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What did Ms. Naheed do instead of the field trip?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Created a classroom zoo activity</div>
+                            <div class="explanation">"We are going to have a zoo in our classroom instead!"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">What did the groups do?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Researched animals and made presentations</div>
+                            <div class="explanation">"Each group researched a different animal and made a presentation."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">How did Kamran feel about the classroom activity?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It was even better than the real zoo</div>
+                            <div class="explanation">"This was even better than the real zoo!" said Kamran.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "My Family" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) A garden</span></div><p class="explanation">"My family is like a garden."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: C) Mom</span></div><p class="explanation">"Mom is like the sunshine bright."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) grow</span></div><p class="explanation">"Grow" rhymes with "so."</p></div>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "My Family" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p class="poem-text">
+                            My family is like a garden,<br>
+                            Each one special, each one fun.<br>
+                            Mom is like the sunshine bright,<br>
+                            Dad is strong, he holds us tight.<br><br>
+                            Sister is a pretty flower,<br>
+                            Brother makes me laugh each hour.<br>
+                            Grandma tells the best stories,<br>
+                            Grandpa shares the morning glories.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What is the family compared to in the poem?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A garden</div>
+                            <div class="explanation">"My family is like a garden."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">Who is compared to sunshine?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Mom</div>
+                            <div class="explanation">"Mom is like the sunshine bright."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "We all love each other so, Together we learn and ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) grow</div>
+                            <div class="explanation">"Grow" rhymes with "so."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: A) A swimming pool/water park</span></div><p class="explanation">Water slides, lifeguards, sunscreen = water park setting.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Try this samosa!...</span></div><p class="explanation">Persuasive writing with enthusiasm and benefits.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 4, 1, 3</span></div><p class="explanation">Gas station: drove there (2), filled gas (4), car wash (1), ice cream (3).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Soups are delicious and comforting meals.</span></div><p class="explanation">Topic sentence about soups matches the paragraph content.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) You were exactly right</span></div><p class="explanation">"Hit the nail on the head" = being exactly correct.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) Consistent practice leads to improvement</span></div><p class="explanation">Sara practiced daily and improved from barely playing to beautiful songs.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: B) January is the first month of the year.</span></div><p class="explanation">Correct capitalization and punctuation.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It helps you remember your thoughts and see your progress.</span></div><p class="explanation">Connects to the example about seeing growth over time.</p></div>
+            <!-- Section 3: Language Skills Q9-16 -->
+            <h4 class="section-header">Language Skills (Q9-16)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? "Water splashed everywhere as kids went down the slides. Lifeguards in red shirts watched from tall chairs. The smell of sunscreen was in the air."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) A swimming pool/water park</div>
+                        <div class="explanation">Water slides, lifeguards, sunscreen = water park setting.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your friend to try a new food. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Try this samosa! It is crispy on the outside and has yummy potatoes inside. You will love it!</div>
+                        <div class="explanation">Persuasive writing with enthusiasm and benefits.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Next, we went through the car wash. 2. First, Dad drove the car to the gas station. 3. Finally, we got ice cream to celebrate our clean car. 4. Then, we filled up the gas tank.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 4, 1, 3</div>
+                        <div class="explanation">Gas station: drove there (2), filled gas (4), car wash (1), ice cream (3).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence: "_______. They include meat, vegetables, and sometimes rice or noodles. Soups can be thin or thick. On a cold day, a warm bowl of soup is perfect."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Soups are delicious and comforting meals.</div>
+                        <div class="explanation">Topic sentence about soups matches the paragraph content.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "hit the nail on the head" mean? "You hit the nail on the head with your answer!"</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) You were exactly right</div>
+                        <div class="explanation">"Hit the nail on the head" = being exactly correct.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">What is the main message? "Six months ago, Sara could barely play a simple tune on the piano. But she practiced every single day, even when she didn't feel like it. Now she can play beautiful songs that make her family smile."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Consistent practice leads to improvement</div>
+                        <div class="explanation">Sara practiced daily and improved from barely playing to beautiful songs.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) January is the first month of the year.</div>
+                        <div class="explanation">Correct capitalization and punctuation.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? "Keeping a diary is a good habit. _______. For example, I can look back and see how much I have grown since last year."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It helps you remember your thoughts and see your progress.</div>
+                        <div class="explanation">Connects to the example about seeing growth over time.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Queen of the Hive" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A queen bee</span></div><p class="explanation">Lays eggs, stays in hive, workers care for her = queen bee.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator lays eggs, does not leave the hive, and is cared for by workers</span></div><p class="explanation">Classic queen bee characteristics.</p></div>
+            <!-- Section 4: Reading Part 2 Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Queen of the Hive" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Every day, thousands of my daughters bring me food. I am the most important member of our home. Without me, there would be no new bees to collect honey.</p>
+                        <p>I do not leave the hive much anymore. My job is to lay eggs - hundreds every day! The workers take care of everything else. It is good to be the queen!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A queen bee</div>
+                            <div class="explanation">Lays eggs, stays in hive, workers care for her = queen bee.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator lays eggs, does not leave the hive, and is cared for by workers</div>
+                            <div class="explanation">Classic queen bee characteristics.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) What did the cloud say to the lightning bolt? You are shocking!</span></div><p class="explanation">A pun on "shocking" (surprising and electrical).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) I am so happy! All my studying paid off!</span></div><p class="explanation">Positive and grateful response to good news.</p></div>
+            <!-- Section 5: Entertainment & Conversation Q19-20 -->
+            <h4 class="section-header">Entertainment & Conversation (Q19-20)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about the sky. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) What did the cloud say to the lightning bolt? You are shocking!</div>
+                        <div class="explanation">A pun on "shocking" (surprising and electrical).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Parent: "You got an A on your spelling test!" Child: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) I am so happy! All my studying paid off!</div>
+                        <div class="explanation">Positive and grateful response to good news.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +386,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

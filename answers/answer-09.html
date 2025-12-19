@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 9 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 9 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,126 +59,323 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Night Sky Show" (Q1-5)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) There was going to be a meteor shower</span></div>
-                    <p class="explanation">"Tonight was special - there was going to be a meteor shower!"</p>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Night Sky Show" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>"Wake up, wake up!" Dad whispered excitedly. It was the middle of the night, but Fatima jumped out of bed. Tonight was special - there was going to be a meteor shower!</p>
+                        <p>They wrapped themselves in warm blankets and went to the backyard. The sky was clear and full of stars.</p>
+                        <p>"Look!" Dad pointed. A streak of light shot across the sky, then another, and another. It was like the sky was raining stars!</p>
+                        <p>"Make a wish!" said Dad.</p>
+                        <p>Fatima closed her eyes and wished that she and Dad could have more nights like this together.</p>
+                        <p>They stayed outside for an hour, counting shooting stars. Fatima counted twenty-three. It was the most magical night of her life.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: C) To the backyard</span></div>
-                    <p class="explanation">They "went to the backyard" to watch the meteor shower.</p>
-                </div>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">Why did Dad wake Fatima up?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) There was going to be a meteor shower</div>
+                            <div class="explanation">"Tonight was special - there was going to be a meteor shower!"</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) Like streaks of light / raining stars</span></div>
-                    <p class="explanation">"A streak of light shot across the sky" and "It was like the sky was raining stars!"</p>
-                </div>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Where did they go to watch the meteor shower?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) To the backyard</div>
+                            <div class="explanation">They "went to the backyard" to watch the meteor shower.</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: C) More special nights with Dad</span></div>
-                    <p class="explanation">Fatima "wished that she and Dad could have more nights like this together."</p>
-                </div>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What did the meteors look like according to the story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Like streaks of light / raining stars</div>
+                            <div class="explanation">"A streak of light shot across the sky" and "It was like the sky was raining stars!"</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: C) It was the most magical night of her life</span></div>
-                    <p class="explanation">The story explicitly says "It was the most magical night of her life."</p>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">What did Fatima wish for?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) More special nights with Dad</div>
+                            <div class="explanation">Fatima "wished that she and Dad could have more nights like this together."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">How did Fatima feel about that night?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) It was the most magical night of her life</div>
+                            <div class="explanation">The story explicitly says "It was the most magical night of her life."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "The Snowman" (Q6-8)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: C) A carrot</span></div>
-                    <p class="explanation">"With coal for eyes and a carrot nose" - the nose was a carrot.</p>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "The Snowman" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>We built a snowman, round and tall,<br>
+                        The biggest snowman of them all.<br>
+                        With coal for eyes and a carrot nose,<br>
+                        A hat on top and sticks for toes.</p>
+                        <p>But when the sun came out to play,<br>
+                        Our snowman slowly melted away.<br>
+                        We waved goodbye to our snowy friend,<br>
+                        Until next winter, we'll meet again.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: B) The snowman melted away</span></div>
-                    <p class="explanation">"When the sun came out to play, Our snowman slowly melted away."</p>
-                </div>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What was used for the snowman's nose?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A carrot</div>
+                            <div class="explanation">"With coal for eyes and a carrot nose" - the nose was a carrot.</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) play</span></div>
-                    <p class="explanation">"Play" rhymes with "day" in "We played in snow throughout the day."</p>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What happened when the sun came out?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) The snowman melted away</div>
+                            <div class="explanation">"When the sun came out to play, Our snowman slowly melted away."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "We played in snow throughout the day, Building memories as we ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) play</div>
+                            <div class="explanation">"Play" rhymes with "day" in "We played in snow throughout the day."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: B) A football match</span></div>
-                    <p class="explanation">Referee, whistle, jerseys, green field, and stadium all indicate a football match.</p>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? The referee blew the whistle. Players in two different colored jerseys ran onto the green field. The crowd in the stadium started cheering loudly.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A football match</div>
+                        <div class="explanation">Referee, whistle, jerseys, green field, and stadium all indicate a football match.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) A puppy would be a great companion and I promise to take care of it every day!</span></div>
-                    <p class="explanation">This is persuasive - it gives a benefit (companion) and shows responsibility (promise to take care).</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your parents to get a puppy. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A puppy would be a great companion and I promise to take care of it every day!</div>
+                        <div class="explanation">This is persuasive - it gives a benefit (companion) and shows responsibility (promise to take care).</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 1, 3, 4</span></div>
-                    <p class="explanation">Laundry: First (2) put clothes in, Then (1) add soap, Next (3) press start, Finally (4) clean clothes.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Then, I add soap and water. 2. First, I put dirty clothes in the machine. 3. Next, I press the start button. 4. Finally, the clothes come out clean.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 1, 3, 4</div>
+                        <div class="explanation">Laundry: First (2) put clothes in, Then (1) add soap, Next (3) press start, Finally (4) clean clothes.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) The baobab tree is one of the most amazing trees in the world.</span></div>
-                    <p class="explanation">This topic sentence introduces the paragraph about the amazing baobab tree.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. Its trunk can grow to be very thick. Baobab trees can store water in their trunks during dry seasons. Some of these trees are over 1,000 years old!</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) The baobab tree is one of the most amazing trees in the world.</div>
+                        <div class="explanation">This topic sentence introduces the paragraph about the amazing baobab tree.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Yusuf was ready to go to sleep</span></div>
-                    <p class="explanation">"Hit the sack" is an idiom meaning to go to bed or go to sleep.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "hit the sack" mean in: After playing all day, Yusuf was ready to hit the sack.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Yusuf was ready to go to sleep</div>
+                        <div class="explanation">"Hit the sack" is an idiom meaning to go to bed or go to sleep.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: C) You can still have fun when plans change</span></div>
-                    <p class="explanation">The family made the best of a rainy day with cocoa and games instead of being sad.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">The family had planned a hiking trip for weeks. But when Saturday came, rain poured down all day. Instead of being sad, they made hot cocoa and played board games together. What lesson can we learn from this family?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) You can still have fun when plans change</div>
+                        <div class="explanation">The family made the best of a rainy day with cocoa and games instead of being sad.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: B) We visited Karachi, Islamabad, and Lahore.</span></div>
-                    <p class="explanation">Correct capitalization (proper nouns), commas between items in a list, and proper ending.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) We visited Karachi, Islamabad, and Lahore.</div>
+                        <div class="explanation">Correct capitalization (proper nouns), commas between items in a list, and proper ending.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It gives you freedom and independence.</span></div>
-                    <p class="explanation">This connects "exciting" with the example of riding to a friend's house alone.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? Learning to ride a bike is exciting. ___. For example, once I learned, I could ride to my friend's house by myself.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It gives you freedom and independence.</div>
+                        <div class="explanation">This connects "exciting" with the example of riding to a friend's house alone.</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Under the Sea" (Q17-18)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A fish</span></div>
-                    <p class="explanation">The narrator has a tail, fins, swims, and lives underwater - it's a fish.</p>
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Under the Sea" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>I swished my tail and glided through the water. Today, I was searching for the shiniest shell to give to my friend on her birthday. The coral reef was full of beautiful things.</p>
+                        <p>Suddenly, I saw it - a pearl-colored shell gleaming in the sand. Perfect! I grabbed it carefully and swam home as fast as my fins could take me.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator has a tail and fins and swims</span></div>
-                    <p class="explanation">"Swished my tail," "my fins," and gliding through water are fish characteristics.</p>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A fish</div>
+                            <div class="explanation">The narrator has a tail, fins, swims, and lives underwater - it's a fish.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator has a tail and fins and swims</div>
+                            <div class="explanation">"Swished my tail," "my fins," and gliding through water are fish characteristics.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why couldn't the bicycle stand up by itself? Because it was two-tired!</span></div>
-                    <p class="explanation">Wordplay joke - "two-tired" sounds like "too tired" and bikes have two tires.</p>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about sports. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why couldn't the bicycle stand up by itself? Because it was two-tired!</div>
+                        <div class="explanation">Wordplay joke - "two-tired" sounds like "too tired" and bikes have two tires.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) You're welcome! Come again anytime.</span></div>
-                    <p class="explanation">A polite, welcoming response to a thank you from a guest.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Guest: Thank you for having me over. Host: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) You're welcome! Come again anytime.</div>
+                        <div class="explanation">A polite, welcoming response to a thank you from a guest.</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,5 +391,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

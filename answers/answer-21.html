@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 21 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 21 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,318 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Lost Teddy Bear" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: C) Mr. Buttons</span></div><p class="explanation">"Ayesha loved her teddy bear, Mr. Buttons."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) At the mall</span></div><p class="explanation">"After a trip to the mall, Mr. Buttons was missing!"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) It had a name tag with her name</span></div><p class="explanation">"We found a teddy bear with a name tag that says Ayesha."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: C) Very sad</span></div><p class="explanation">"She cried herself to sleep that night."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) Name tags on belongings can help return lost items</span></div><p class="explanation">The name tag helped security return the teddy bear.</p></div>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Lost Teddy Bear" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Ayesha loved her teddy bear, Mr. Buttons, more than anything. She had him since she was a baby. One day, after a trip to the mall, Mr. Buttons was missing!</p>
+                        <p>Ayesha searched everywhere - the car, her room, the living room. Nothing. She cried herself to sleep that night.</p>
+                        <p>The next morning, the phone rang. It was the mall security. "We found a teddy bear with a name tag that says Ayesha. Is it yours?"</p>
+                        <p>Ayesha and her mom rushed to the mall. There was Mr. Buttons, sitting on a chair in the security office, looking like he was waiting for her!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What was the name of Ayesha's teddy bear?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Mr. Buttons</div>
+                            <div class="explanation">"Ayesha loved her teddy bear, Mr. Buttons."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Where did Ayesha lose her teddy bear?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) At the mall</div>
+                            <div class="explanation">"After a trip to the mall, Mr. Buttons was missing!"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">How did the security know the teddy bear was Ayesha's?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It had a name tag with her name</div>
+                            <div class="explanation">"We found a teddy bear with a name tag that says Ayesha."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">How did Ayesha feel when she lost Mr. Buttons?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Very sad</div>
+                            <div class="explanation">"She cried herself to sleep that night."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What lesson can we learn from this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Name tags on belongings can help return lost items</div>
+                            <div class="explanation">The name tag helped security return the teddy bear.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "Grandma's Cookies" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) Chocolate chip cookies</span></div><p class="explanation">"Chocolate chips in every bite."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: C) Stir the dough</span></div><p class="explanation">"She lets me help her stir the dough."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) tea</span></div><p class="explanation">"Tea" rhymes with "me."</p></div>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "Grandma's Cookies" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p class="poem-text">
+                            The smell of cookies fills the air,<br>
+                            Grandma's baking with such care.<br>
+                            Chocolate chips in every bite,<br>
+                            Golden brown, they are just right!<br><br>
+                            She lets me help her stir the dough,<br>
+                            And watch the timer as minutes go.<br>
+                            The best part is when they are done,<br>
+                            Eating them together is so much fun!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What kind of cookies is Grandma making?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Chocolate chip cookies</div>
+                            <div class="explanation">"Chocolate chips in every bite."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What does the child help Grandma do?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Stir the dough</div>
+                            <div class="explanation">"She lets me help her stir the dough."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "We sit together, Grandma and me, Having cookies with a cup of ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) tea</div>
+                            <div class="explanation">"Tea" rhymes with "me."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: A) A park playground</span></div><p class="explanation">Slides, swings, children playing, parents watching = playground.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) A bicycle would help me exercise...</span></div><p class="explanation">Persuasive with benefits (exercise, visiting friends).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 3, 4, 1</span></div><p class="explanation">Letter: wrote (2), envelope (3), stamp (4), mailbox (1).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Flashlights are useful tools.</span></div><p class="explanation">Topic sentence about flashlights matches the paragraph.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Do not bring up an old problem that might cause trouble</span></div><p class="explanation">"Let sleeping dogs lie" = avoid stirring up old issues.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) They can find fun in any situation</span></div><p class="explanation">They had a car picnic and laughed about their adventure.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) Can you pass me the salt, please?</span></div><p class="explanation">Correct capitalization, comma before "please," question mark.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It helps you communicate with more people.</span></div><p class="explanation">Connects to example of talking to grandmother.</p></div>
+            <!-- Section 3: Language Skills Q9-16 -->
+            <h4 class="section-header">Language Skills (Q9-16)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? "Colorful slides and swings filled the playground. Children were laughing and playing while parents watched from nearby benches."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) A park playground</div>
+                        <div class="explanation">Slides, swings, children playing, parents watching = playground.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your parents to get you a bicycle. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A bicycle would help me exercise and I could ride to my friend's house safely!</div>
+                        <div class="explanation">Persuasive with benefits (exercise, visiting friends).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Finally, I put the letter in the mailbox. 2. First, I wrote a letter to my grandparents. 3. Next, I put the letter in an envelope. 4. Then, I put a stamp on the envelope.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 3, 4, 1</div>
+                        <div class="explanation">Letter: wrote (2), envelope (3), stamp (4), mailbox (1).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence: "_______. They help us see when it is dark. Flashlights are used for camping and during power outages. Always keep batteries ready for your flashlight."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Flashlights are useful tools.</div>
+                        <div class="explanation">Topic sentence about flashlights matches the paragraph.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "let sleeping dogs lie" mean? "When his sister asked about the broken vase, Dad said to let sleeping dogs lie."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Do not bring up an old problem that might cause trouble</div>
+                        <div class="explanation">"Let sleeping dogs lie" = avoid stirring up old issues.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">What does this story tell us about the family? "The family spread out their picnic blanket at the park. Just as they opened the food basket, raindrops started falling! They quickly packed up and had their picnic in the car instead, laughing at their adventure."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) They can find fun in any situation</div>
+                        <div class="explanation">They had a car picnic and laughed about their adventure.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Can you pass me the salt, please?</div>
+                        <div class="explanation">Correct capitalization, comma before "please," question mark.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? "Learning a new language is rewarding. _______. For example, I can now talk to my grandmother who only speaks Urdu."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It helps you communicate with more people.</div>
+                        <div class="explanation">Connects to example of talking to grandmother.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Morning Swim" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A penguin</span></div><p class="explanation">Slides on belly, catches fish, South Pole = penguin.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator slides on its belly, dives for fish, has fluffy babies, and lives at the South Pole</span></div><p class="explanation">Classic penguin characteristics.</p></div>
+            <!-- Section 4: Reading Part 2 Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Morning Swim" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>The sun is rising over the ice. I slide on my belly and dive into the freezing water. Brrr! But I love it. I catch a fish for breakfast and pop back up onto the ice.</p>
+                        <p>My fluffy babies are waiting for me. I give them some fish and we huddle together to stay warm. Life at the South Pole is cold but wonderful!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A penguin</div>
+                            <div class="explanation">Slides on belly, catches fish, South Pole = penguin.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator slides on its belly, dives for fish, has fluffy babies, and lives at the South Pole</div>
+                            <div class="explanation">Classic penguin characteristics.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why did the banana go to the doctor? Because it was not peeling well!</span></div><p class="explanation">A pun on "peeling" (banana skin) and "feeling."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) Sure! What do you need help with?</span></div><p class="explanation">Helpful and friendly response.</p></div>
+            <!-- Section 5: Entertainment & Conversation Q19-20 -->
+            <h4 class="section-header">Entertainment & Conversation (Q19-20)</h4>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about fruit. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why did the banana go to the doctor? Because it was not peeling well!</div>
+                        <div class="explanation">A pun on "peeling" (banana skin) and "feeling."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Friend: "Can you help me with my homework?" You: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Sure! What do you need help with?</div>
+                        <div class="explanation">Helpful and friendly response.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +385,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

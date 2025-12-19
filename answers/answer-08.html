@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 8 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 8 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,126 +59,323 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Treasure Map" (Q1-5)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: C) In his grandfather's attic</span></div>
-                    <p class="explanation">The story says Haris "found an old piece of paper in his grandfather's attic."</p>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Treasure Map" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Haris found an old piece of paper in his grandfather's attic. It looked like a treasure map! There was an X marked near the old oak tree in the backyard.</p>
+                        <p>"Grandpa, is this a real treasure map?" Haris asked excitedly.</p>
+                        <p>Grandpa's eyes twinkled. "Only one way to find out."</p>
+                        <p>Haris grabbed a small shovel and ran to the oak tree. He dug carefully where the X was marked. Soon, his shovel hit something hard. It was a metal box!</p>
+                        <p>Inside the box were old photographs of Grandpa as a young boy, some old coins, and a note that said, "The real treasure is family and memories."</p>
+                        <p>Haris hugged the box tightly. He understood now that some treasures are worth more than gold.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) Near the old oak tree</span></div>
-                    <p class="explanation">The map had "an X marked near the old oak tree in the backyard."</p>
-                </div>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">Where did Haris find the treasure map?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) In his grandfather's attic</div>
+                            <div class="explanation">The story says Haris "found an old piece of paper in his grandfather's attic."</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: C) Old photographs, coins, and a note</span></div>
-                    <p class="explanation">Inside the box were "old photographs of Grandpa as a young boy, some old coins, and a note."</p>
-                </div>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Where was the X marked on the map?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Near the old oak tree</div>
+                            <div class="explanation">The map had "an X marked near the old oak tree in the backyard."</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) The real treasure is family and memories</span></div>
-                    <p class="explanation">The note said exactly this - "The real treasure is family and memories."</p>
-                </div>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What did Haris find inside the metal box?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Old photographs, coins, and a note</div>
+                            <div class="explanation">Inside the box were "old photographs of Grandpa as a young boy, some old coins, and a note."</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) Family and memories are more precious than gold</span></div>
-                    <p class="explanation">Haris "understood now that some treasures are worth more than gold."</p>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">What did the note say?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) The real treasure is family and memories</div>
+                            <div class="explanation">The note said exactly this - "The real treasure is family and memories."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What is the main message of this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Family and memories are more precious than gold</div>
+                            <div class="explanation">Haris "understood now that some treasures are worth more than gold."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "Books Are Magic" (Q6-8)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) Dragons and knights</span></div>
-                    <p class="explanation">The poem says "Meet dragons brave and knights so bold."</p>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "Books Are Magic" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Open a book and step inside,<br>
+                        To worlds of wonder, far and wide.<br>
+                        Meet dragons brave and knights so bold,<br>
+                        Discover stories yet untold.</p>
+                        <p>Fly through space or sail the sea,<br>
+                        A book can take you anywhere for free.<br>
+                        Turn the pages, let your mind soar,<br>
+                        With every book, you'll learn much more.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: A) Take you anywhere</span></div>
-                    <p class="explanation">"A book can take you anywhere for free."</p>
-                </div>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">According to the poem, what can you meet in books?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Dragons and knights</div>
+                            <div class="explanation">The poem says "Meet dragons brave and knights so bold."</div>
+                        </div>
+                    </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: C) well</span></div>
-                    <p class="explanation">"Well" rhymes with "tell" in "Words on a page, a story to tell."</p>
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What does the poem say books can do for free?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) Take you anywhere</div>
+                            <div class="explanation">"A book can take you anywhere for free."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "Words on a page, a story to tell, With every chapter, you know it ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) well</div>
+                            <div class="explanation">"Well" rhymes with "tell" in "Words on a page, a story to tell."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: B) An airplane</span></div>
-                    <p class="explanation">Pilot, seatbelts, landing, and seeing city from above all indicate an airplane.</p>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? The passengers buckled their seatbelts as the pilot announced they would be landing soon. Through the window, they could see the city getting bigger and bigger.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) An airplane</div>
+                        <div class="explanation">Pilot, seatbelts, landing, and seeing city from above all indicate an airplane.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) In the art club, you'll learn amazing techniques and make cool projects!</span></div>
-                    <p class="explanation">This is persuasive - it highlights exciting benefits to convince someone to join.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your friend to join the art club. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) In the art club, you'll learn amazing techniques and make cool projects!</div>
+                        <div class="explanation">This is persuasive - it highlights exciting benefits to convince someone to join.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 4, 1, 3</span></div>
-                    <p class="explanation">First (2) bought balloon, Unfortunately (4) string slipped, Then (1) floated up, Finally (3) disappeared.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Then, it floated up into the sky. 2. First, we bought a colorful balloon. 3. Finally, it disappeared among the clouds. 4. Unfortunately, the string slipped from my hand.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 4, 1, 3</div>
+                        <div class="explanation">First (2) bought balloon, Unfortunately (4) string slipped, Then (1) floated up, Finally (3) disappeared.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: A) Beavers are hardworking animals with amazing skills.</span></div>
-                    <p class="explanation">This topic sentence introduces the paragraph about beavers' abilities.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. They build dams using sticks and mud. These dams create ponds where beavers can live safely. Beavers also have flat tails that help them swim.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) Beavers are hardworking animals with amazing skills.</div>
+                        <div class="explanation">This topic sentence introduces the paragraph about beavers' abilities.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Ali accidentally told the secret</span></div>
-                    <p class="explanation">"Let the cat out of the bag" means to reveal a secret accidentally.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "let the cat out of the bag" mean in: Ali let the cat out of the bag about the surprise party.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Ali accidentally told the secret</div>
+                        <div class="explanation">"Let the cat out of the bag" means to reveal a secret accidentally.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) She knows how to get students' attention</span></div>
-                    <p class="explanation">Her clapping instantly made everyone stop and listen - she's experienced at managing a classroom.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">The classroom was so noisy that nobody could hear anything. Mrs. Khan clapped her hands three times. Instantly, every student stopped talking and looked at her with attention. What does this tell us about Mrs. Khan?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) She knows how to get students' attention</div>
+                        <div class="explanation">Her clapping instantly made everyone stop and listen - she's experienced at managing a classroom.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) I live in Lahore, Pakistan.</span></div>
-                    <p class="explanation">Proper nouns (place names) need capital letters: Lahore, Pakistan.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) I live in Lahore, Pakistan.</div>
+                        <div class="explanation">Proper nouns (place names) need capital letters: Lahore, Pakistan.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It brings everyone together and creates happy memories.</span></div>
-                    <p class="explanation">This reason explains why board games are great family activities - togetherness and memories.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? Playing board games is a great family activity. ___. For example, we all laugh together when someone makes a funny move.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It brings everyone together and creates happy memories.</div>
+                        <div class="explanation">This reason explains why board games are great family activities - togetherness and memories.</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Morning Music" (Q17-18)</h4>
-
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: C) A bird</span></div>
-                    <p class="explanation">The narrator sits on a branch, sings, and eats breadcrumbs - definitely a bird.</p>
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Morning Music" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Every morning, I wake up before the sun rises. I sit on the branch outside the window and begin to sing. My song wakes up the family inside the house.</p>
+                        <p>The little girl always waves at me through the glass. Sometimes she leaves breadcrumbs on the windowsill for me. I love her for that.</p>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator sits on a branch and sings</span></div>
-                    <p class="explanation">These are the key clues - only birds sit on branches outside windows and sing.</p>
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) A bird</div>
+                            <div class="explanation">The narrator sits on a branch, sings, and eats breadcrumbs - definitely a bird.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator sits on a branch and sings</div>
+                            <div class="explanation">These are the key clues - only birds sit on branches outside windows and sing.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
+            </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) What do snowmen eat for breakfast? Frosted Flakes!</span></div>
-                    <p class="explanation">A joke using wordplay - Frosted Flakes sounds like a cold, snowy breakfast for a snowman.</p>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about snow. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) What do snowmen eat for breakfast? Frosted Flakes!</div>
+                        <div class="explanation">A joke using wordplay - Frosted Flakes sounds like a cold, snowy breakfast for a snowman.</div>
+                    </div>
                 </div>
 
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: C) Yes, I finished it an hour ago!</span></div>
-                    <p class="explanation">This is a polite, direct answer to the question asked.</p>
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Mom: Did you finish your homework? Child: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Yes, I finished it an hour ago!</div>
+                        <div class="explanation">This is a polite, direct answer to the question asked.</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,5 +391,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

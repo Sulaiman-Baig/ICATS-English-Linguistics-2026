@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 10 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 10 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,106 +59,324 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Giving Tree" (Q1-5)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: C) Mangoes and shade</span></div>
-                    <p class="explanation">The tree "gave sweet mangoes" and "elders rested in its shade."</p>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Giving Tree" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>In the village, there stood a very old mango tree. It gave sweet mangoes to everyone who passed by. The children climbed its branches, and elders rested in its shade.</p>
+                        <p>One hot summer, no rain came. The river dried up, and people were worried. The mango tree saw their struggle.</p>
+                        <p>"I cannot make rain," thought the tree, "but I can still help."</p>
+                        <p>The tree dropped extra leaves to cover the ground and keep it cool. It gave more fruit than ever before. People collected the mangoes and shared them with neighboring villages.</p>
+                        <p>When the rains finally came, everyone gathered around the tree to say thank you. They decorated it with colorful ribbons and flowers.</p>
+                        <p>"As long as I can give, I am happy," rustled the tree.</p>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) No rain and the river dried up</span></div>
-                    <p class="explanation">"One hot summer, no rain came. The river dried up."</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) It dropped extra leaves and gave more fruit</span></div>
-                    <p class="explanation">The tree "dropped extra leaves to cover the ground and keep it cool. It gave more fruit than ever before."</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: C) They decorated it with ribbons and flowers</span></div>
-                    <p class="explanation">"They decorated it with colorful ribbons and flowers."</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) Helping others brings happiness</span></div>
-                    <p class="explanation">"As long as I can give, I am happy" - the tree finds happiness in giving.</p>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What did the mango tree give to people?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Mangoes and shade</div>
+                            <div class="explanation">The tree "gave sweet mangoes" and "elders rested in its shade."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">What problem did the village face?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) No rain and the river dried up</div>
+                            <div class="explanation">"One hot summer, no rain came. The river dried up."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">How did the tree try to help during the drought?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It dropped extra leaves and gave more fruit</div>
+                            <div class="explanation">The tree "dropped extra leaves to cover the ground and keep it cool. It gave more fruit than ever before."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">How did the villagers show gratitude?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) They decorated it with ribbons and flowers</div>
+                            <div class="explanation">"They decorated it with colorful ribbons and flowers."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What is the main message of this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Helping others brings happiness</div>
+                            <div class="explanation">"As long as I can give, I am happy" - the tree finds happiness in giving.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "My Bicycle" (Q6-8)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) Free and happy</span></div>
-                    <p class="explanation">"Feeling free" and "Oh, what fun it is for me!"</p>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "My Bicycle" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>My bicycle takes me everywhere,<br>
+                        Through the streets without a care.<br>
+                        Pedaling fast, feeling free,<br>
+                        Oh, what fun it is for me!</p>
+                        <p>Past the shops and through the park,<br>
+                        I ride until it's almost dark.<br>
+                        Wind in my hair and sun on my face,<br>
+                        My bicycle is my favorite place.</p>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: B) Past shops and through the park</span></div>
-                    <p class="explanation">"Past the shops and through the park"</p>
-                </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) sky</span></div>
-                    <p class="explanation">"Sky" rhymes with "by" in "I ring my bell as I go by."</p>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">How does the speaker feel when riding the bicycle?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Free and happy</div>
+                            <div class="explanation">"Feeling free" and "Oh, what fun it is for me!"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">Where does the speaker ride the bicycle?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Past shops and through the park</div>
+                            <div class="explanation">"Past the shops and through the park"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "I ring my bell as I go by, Waving at friends beneath the ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) sky</div>
+                            <div class="explanation">"Sky" rhymes with "by" in "I ring my bell as I go by."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: B) A dentist's office</span></div>
-                    <p class="explanation">Dentist, mouth wide open, bright light, tools on a tray - all describe a dentist's office.</p>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? The dentist asked me to open my mouth wide. The bright light above my head was shining. I could see tools on a small tray next to the chair.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A dentist's office</div>
+                        <div class="explanation">Dentist, mouth wide open, bright light, tools on a tray - all describe a dentist's office.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) With less homework, we would have more time to rest and play...</span></div>
-                    <p class="explanation">This is persuasive as it gives benefits of the suggestion.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your teacher to have less homework. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) With less homework, we would have more time to rest and play, which helps us focus better in class!</div>
+                        <div class="explanation">This is persuasive as it gives benefits of the suggestion.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 1, 3, 4</span></div>
-                    <p class="explanation">PB&J order: First (2) bread, Then (1) peanut butter, Next (3) jelly, Finally (4) together.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Then, I spread peanut butter on one slice. 2. First, I took out two slices of bread. 3. Next, I put jelly on the other slice. 4. Finally, I put the two slices together.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 1, 3, 4</div>
+                        <div class="explanation">PB&J order: First (2) bread, Then (1) peanut butter, Next (3) jelly, Finally (4) together.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Here is how bees make honey.</span></div>
-                    <p class="explanation">The paragraph explains the process of honey-making.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. Bees collect nectar from flowers. They bring it back to the hive and turn it into honey. Honey is stored in honeycombs made of beeswax.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Here is how bees make honey.</div>
+                        <div class="explanation">The paragraph explains the process of honey-making.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Be quiet and stop talking</span></div>
-                    <p class="explanation">"Zip your lip" means to be quiet, like closing a zipper.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "zip your lip" mean in: Mom told us to zip our lips during the movie.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Be quiet and stop talking</div>
+                        <div class="explanation">"Zip your lip" means to be quiet, like closing a zipper.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: C) Finishing responsibilities first leads to rewards</span></div>
-                    <p class="explanation">Sarah finished her chores and homework, then got to play.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">Sarah looked longingly out the window at her friends playing. But first, she had to clean her room and do her homework. She worked quickly and carefully, and soon she was outside playing too! What does this passage teach us?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Finishing responsibilities first leads to rewards</div>
+                        <div class="explanation">Sarah finished her chores and homework, then got to play.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) Wow! That was amazing!</span></div>
-                    <p class="explanation">Correct exclamation marks and capitalization.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) Wow! That was amazing!</div>
+                        <div class="explanation">Correct exclamation marks and capitalization.</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It helps you make your own meals and be independent.</span></div>
-                    <p class="explanation">This connects the opinion with the example of making breakfast.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? Cooking is a useful skill to learn. ___. For example, I made scrambled eggs for breakfast yesterday.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It helps you make your own meals and be independent.</div>
+                        <div class="explanation">This connects the opinion with the example of making breakfast.</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Dance Performance" (Q17-18)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A dancer performing on stage</span></div>
-                    <p class="explanation">The narrator leaped onto stage, twirled and jumped, and bowed at the end.</p>
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Dance Performance" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>The music started, and I leaped onto the stage. My heart was beating fast, but my feet knew exactly what to do. I twirled and jumped, moving with the melody.</p>
+                        <p>The spotlight was warm on my face. I could see my parents in the front row, smiling proudly. When the music ended, the audience clapped loudly.</p>
+                        <p>I bowed and felt tears of happiness in my eyes. All those hours of practice were worth it.</p>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: C) Happy and proud</span></div>
-                    <p class="explanation">"Tears of happiness" and feeling the hours of practice were "worth it."</p>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A dancer performing on stage</div>
+                            <div class="explanation">The narrator leaped onto stage, twirled and jumped, and bowed at the end.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">How does the narrator feel at the end?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Happy and proud</div>
+                            <div class="explanation">"Tears of happiness" and feeling the hours of practice were "worth it."</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why did the pencil go to school? Because it wanted to be sharp!</span></div>
-                    <p class="explanation">Wordplay - "sharp" means both intelligent and having a sharp point (pencils need sharpening).</p>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about school supplies. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why did the pencil go to school? Because it wanted to be sharp!</div>
+                        <div class="explanation">Wordplay - "sharp" means both intelligent and having a sharp point (pencils need sharpening).</div>
+                    </div>
                 </div>
-                <div class="answer-item">
-                    <div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) Thank you! I studied really hard.</span></div>
-                    <p class="explanation">A polite, humble response acknowledging the compliment and effort.</p>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Teacher: You did very well on your test! Student: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Thank you! I studied really hard.</div>
+                        <div class="explanation">A polite, humble response acknowledging the compliment and effort.</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -174,5 +392,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

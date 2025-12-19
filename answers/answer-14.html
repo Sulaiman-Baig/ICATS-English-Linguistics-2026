@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 14 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 14 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,323 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Paper Boat" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) During art class</span></div><p class="explanation">"Rayan made a paper boat during art class."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: B) He wanted to see it sail</span></div><p class="explanation">He thought "Perfect!" and watched it sail away.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) It disappeared</span></div><p class="explanation">"The boat disappeared into the darkness."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) It was in his garden</span></div><p class="explanation">"I found it in my garden."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: B) Sometimes things work out unexpectedly</span></div><p class="explanation">The boat returned in an unexpected way.</p></div>
+            <!-- Section 1: Reading Passage Q1-5 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Paper Boat" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Rayan made a paper boat during art class. It was white with blue stripes, and he wrote his name on the side. He was very proud of it.</p>
+                        <p>On his way home, it started to rain. Rayan saw a stream of water flowing down the street. "Perfect!" he thought. He placed his boat in the water and watched it sail away.</p>
+                        <p>The boat floated past his house, past the park, and toward the storm drain. "Come back!" Rayan cried, but the boat disappeared into the darkness.</p>
+                        <p>The next morning, Rayan was sad at breakfast. Then his neighbor, old Mr. Khan, knocked on the door. "Is this yours?" he asked, holding up the paper boat. "I found it in my garden. The wind must have blown it there!"</p>
+                        <p>Rayan could not believe it. His boat had gone on quite an adventure!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">Where did Rayan make the paper boat?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) During art class</div>
+                            <div class="explanation">"Rayan made a paper boat during art class."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Why did Rayan put his boat in the water?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) He wanted to see it sail</div>
+                            <div class="explanation">He thought "Perfect!" and watched it sail away.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">What happened to the boat in the storm drain?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It disappeared</div>
+                            <div class="explanation">"The boat disappeared into the darkness."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">How did Mr. Khan find the boat?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) It was in his garden</div>
+                            <div class="explanation">"I found it in my garden."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What did Rayan learn from this experience?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Sometimes things work out unexpectedly</div>
+                            <div class="explanation">The boat returned in an unexpected way.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "The Treehouse" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: B) In the branches of an old oak tree</span></div><p class="explanation">"High up in the branches of the old oak tree."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: B) Rooftops, the church, and Dad's car</span></div><p class="explanation">"The rooftops, the church, even Dad's parked car."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: B) gales</span></div><p class="explanation">"Gales" rhymes with "tales."</p></div>
+            <!-- Section 2: Poem Q6-8 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "The Treehouse" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>High up in the branches of the old oak tree,<br>
+                        There sits a special house just for you and me.<br>
+                        We climb up the ladder, step by step with care,<br>
+                        Until we reach our secret spot in the air.</p>
+                        <p>From our treehouse we can see so far,<br>
+                        The rooftops, the church, even Dad's parked car.<br>
+                        A place to dream and a place to play,<br>
+                        Our treehouse is the best part of my day.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">Where is the treehouse located?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) In the branches of an old oak tree</div>
+                            <div class="explanation">"High up in the branches of the old oak tree."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What can they see from the treehouse?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Rooftops, the church, and Dad's car</div>
+                            <div class="explanation">"The rooftops, the church, even Dad's parked car."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "We read our books and tell our tales, While wind blows through like gentle ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) gales</div>
+                            <div class="explanation">"Gales" rhymes with "tales."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 3: Language Skills Q9-16 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: C) A farm</span></div><p class="explanation">Farmer, cows, barn, chickens, tractor = farm.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) With new art supplies, I can create beautiful drawings...</span></div><p class="explanation">Persuasive - shows benefits.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 3, 4, 1</span></div><p class="explanation">Building: First (2) gathered, Then (3) sawed, Next (4) hammered, Finally (1) hung.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: A) Dolphins are amazing animals that live in the sea.</span></div><p class="explanation">Topic sentence about dolphins matches the paragraph.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) Never / something that will never happen</span></div><p class="explanation">"When pigs fly" = never (pigs cannot fly).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) They made it fun by telling stories</span></div><p class="explanation">"They lit candles and told stories."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: C) I can not wait to see the movie!</span></div><p class="explanation">Correct capitalization and exclamation mark.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) They help keep our air clean and protect wildlife.</span></div><p class="explanation">Connects the opinion to the example about oxygen and birds.</p></div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "My Home" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A turtle/tortoise</span></div><p class="explanation">Shell, pulls head/legs in, slow, eats lettuce, lives in tank = turtle.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: B) Pulls head and legs inside the shell</span></div><p class="explanation">"I just pull my head and legs inside."</p></div>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? The farmer milked the cows in the big red barn. Chickens wandered nearby, pecking at the ground. A tractor was parked in the field.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) A farm</div>
+                        <div class="explanation">Farmer, cows, barn, chickens, tractor = farm.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your mom to buy you art supplies. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) With new art supplies, I can create beautiful drawings and improve my skills!</div>
+                        <div class="explanation">Persuasive - shows benefits.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order: 1. Finally, we hung the birdhouse in the tree. 2. First, we gathered wood and nails. 3. Then, Dad helped me saw the pieces. 4. Next, we hammered the pieces together.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 3, 4, 1</div>
+                        <div class="explanation">Building: First (2) gathered, Then (3) sawed, Next (4) hammered, Finally (1) hung.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Read the paragraph and add the best topic sentence: ___. They are very smart and can learn many tricks. Dolphins communicate using clicks and whistles. They live in groups called pods and help take care of each other.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) Dolphins are amazing animals that live in the sea.</div>
+                        <div class="explanation">Topic sentence about dolphins matches the paragraph.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "when pigs fly" mean in: "I will clean my room when pigs fly," joked Aamir.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Never / something that will never happen</div>
+                        <div class="explanation">"When pigs fly" = never (pigs cannot fly).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">Lightning flashed across the sky, and thunder shook the windows. Then everything went dark - the power had gone out! The family lit candles and told stories until the lights came back on. How did the family handle the power outage?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) They made it fun by telling stories</div>
+                        <div class="explanation">"They lit candles and told stories."</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: C) I can not wait to see the movie!</div>
+                        <div class="explanation">Correct capitalization and exclamation mark.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best? Planting trees is good for the environment. ___. For example, trees give us oxygen and provide homes for birds.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) They help keep our air clean and protect wildlife.</div>
+                        <div class="explanation">Connects the opinion to the example about oxygen and birds.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <!-- Section 4: Reading Passage Q17-18 -->
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "My Home" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>I love my shell. It keeps me safe from predators and the hot sun. Whenever I feel scared, I just pull my head and legs inside.</p>
+                        <p>I move slowly, but that is okay. I have nowhere to rush to. Today, I will munch on some lettuce and take a nap in my tank. What a perfect life!</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A turtle/tortoise</div>
+                            <div class="explanation">Shell, pulls head/legs in, slow, eats lettuce, lives in tank = turtle.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What does the narrator do when scared?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Pulls head and legs inside the shell</div>
+                            <div class="explanation">"I just pull my head and legs inside."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Entertainment & Conversation Q19-20 (no passage) -->
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Why did the doctor carry a red pen? In case they needed to draw blood!</span></div><p class="explanation">Wordplay on "draw blood" - drawing with pen vs medical procedure.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) Yes, I will have the chicken sandwich, please.</span></div><p class="explanation">Polite, direct answer to the question.</p></div>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about doctors. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Why did the doctor carry a red pen? In case they needed to draw blood!</div>
+                        <div class="explanation">Wordplay on "draw blood" - drawing with pen vs medical procedure.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Waiter: Are you ready to order? Customer: ___</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Yes, I will have the chicken sandwich, please.</div>
+                        <div class="explanation">Polite, direct answer to the question.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +390,47 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const content = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                content.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Answer Key - Paper 28 | ICATS English Grade 1-2</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="learning-page">
     <header class="header">
         <div class="header-content">
             <h1>ICATS English Linguistics</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main class="container answer-page">
+    <main class="container">
         <section class="answer-header">
             <h2>Paper 28 - Complete Answer Key</h2>
             <div class="scoring-guide">
@@ -59,47 +59,317 @@
             </div>
         </section>
 
+        <div class="global-controls">
+            <button class="btn btn-primary" onclick="showAllAnswers()">Show All Answers</button>
+            <button class="btn btn-secondary" onclick="hideAllAnswers()">Hide All Answers</button>
+        </div>
+
         <section class="detailed-answers">
             <h3>Detailed Explanations</h3>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "The Community Garden" (Q1-5)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q1</span><span class="correct-answer">Correct Answer: B) An empty lot</span></div><p class="explanation">"Nobody used the empty lot on Maple Street."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q2</span><span class="correct-answer">Correct Answer: C) Mrs. Begum</span></div><p class="explanation">"Mrs. Begum had an idea. 'Let us turn it into a community garden!'"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q3</span><span class="correct-answer">Correct Answer: B) Only a few neighbors</span></div><p class="explanation">"At first, only a few neighbors helped."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q4</span><span class="correct-answer">Correct Answer: B) How plants grow</span></div><p class="explanation">"Children learn how plants grow."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q5</span><span class="correct-answer">Correct Answer: C) How it brought the community together</span></div><p class="explanation">"The best thing... is how it brought our community together."</p></div>
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "The Community Garden" (Q1-5)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Nobody used the empty lot on Maple Street until Mrs. Begum had an idea. "Let us turn it into a community garden!" she suggested.</p>
+                        <p>At first, only a few neighbors helped. They pulled weeds, brought in soil, and planted seeds. Slowly, more people joined.</p>
+                        <p>Now, the garden is full of vegetables, flowers, and fruit trees. Families come together to water, weed, and harvest. Children learn how plants grow. Older people share gardening tips.</p>
+                        <p>"The best thing about this garden," Mrs. Begum says, "is not the food - it is how it brought our community together."</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q1</span>
+                            <span class="question-text">What was on Maple Street before the garden?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) An empty lot</div>
+                            <div class="explanation">"Nobody used the empty lot on Maple Street."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q2</span>
+                            <span class="question-text">Who had the idea for the garden?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) Mrs. Begum</div>
+                            <div class="explanation">"Mrs. Begum had an idea. 'Let us turn it into a community garden!'"</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q3</span>
+                            <span class="question-text">How many people helped at first?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Only a few neighbors</div>
+                            <div class="explanation">"At first, only a few neighbors helped."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q4</span>
+                            <span class="question-text">What do children learn in the garden?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) How plants grow</div>
+                            <div class="explanation">"Children learn how plants grow."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q5</span>
+                            <span class="question-text">What does Mrs. Begum say is the best thing about the garden?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) How it brought the community together</div>
+                            <div class="explanation">"The best thing... is how it brought our community together."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
-                <h4>Poem: "Clouds" (Q6-8)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q6</span><span class="correct-answer">Correct Answer: C) White</span></div><p class="explanation">"Clouds are fluffy, clouds are white."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q7</span><span class="correct-answer">Correct Answer: B) Rain may fall</span></div><p class="explanation">"When they turn gray, rain may fall."</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q8</span><span class="correct-answer">Correct Answer: D) slow</span></div><p class="explanation">"Slow" rhymes with "go."</p></div>
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Poem: "Clouds" (Q6-8)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>Clouds are fluffy, clouds are white,<br>
+                        Floating softly, what a sight!<br>
+                        Some look like animals in the sky,<br>
+                        Elephants and bunnies passing by.</p>
+                        <p>When they turn gray, rain may fall,<br>
+                        Watering flowers, trees, and all.<br>
+                        Clouds are nature's floating art,<br>
+                        Each one special, set apart.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q6</span>
+                            <span class="question-text">What color are most clouds?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: C) White</div>
+                            <div class="explanation">"Clouds are fluffy, clouds are white."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q7</span>
+                            <span class="question-text">What happens when clouds turn gray?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) Rain may fall</div>
+                            <div class="explanation">"When they turn gray, rain may fall."</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q8</span>
+                            <span class="question-text">Complete the poem with a word that rhymes: "I lie on the grass and watch them go, Drifting gently, high and ___________."</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: D) slow</div>
+                            <div class="explanation">"Slow" rhymes with "go."</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <div class="passage-section-header">
                 <h4>Language Skills (Q9-16)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q9</span><span class="correct-answer">Correct Answer: B) A music room</span></div><p class="explanation">Instruments, piano, music stands = music room.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q10</span><span class="correct-answer">Correct Answer: B) Let us share our books with children who do not have any...</span></div><p class="explanation">Persuasive writing with appeal to help others.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q11</span><span class="correct-answer">Correct Answer: A) 2, 4, 1, 3</span></div><p class="explanation">Baking: mixed (2), poured (4), baked (1), decorated (3).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q12</span><span class="correct-answer">Correct Answer: B) Stars are fascinating objects in space.</span></div><p class="explanation">Topic sentence about stars matches the paragraph.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q13</span><span class="correct-answer">Correct Answer: B) She got nervous and did not want to do it</span></div><p class="explanation">"Cold feet" = becoming nervous or scared to do something.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q14</span><span class="correct-answer">Correct Answer: B) She wanted to finish her exciting book</span></div><p class="explanation">"She was on the last chapter of her mystery book!"</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q15</span><span class="correct-answer">Correct Answer: B) We went to Karachi, Lahore, and Islamabad.</span></div><p class="explanation">Correct capitalization and commas in a list.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q16</span><span class="correct-answer">Correct Answer: B) It builds trust and shows people they can count on you.</span></div><p class="explanation">Connects to the example about friend trusting her.</p></div>
             </div>
 
-            <div class="passage-section">
-                <h4>Reading Passage: "Down in the Burrow" (Q17-18)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q17</span><span class="correct-answer">Correct Answer: B) A squirrel or chipmunk</span></div><p class="explanation">Stores acorns, cheeks hold food, lives in burrow = chipmunk/squirrel.</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q18</span><span class="correct-answer">Correct Answer: A) The narrator stores acorns, has stretchy cheeks, and lives in a burrow</span></div><p class="explanation">Classic chipmunk/squirrel characteristics.</p></div>
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q9</span>
+                        <span class="question-text">Which picture best matches the setting? (Instruments, piano, music stands)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) A music room</div>
+                        <div class="explanation">Instruments, piano, music stands = music room.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q10</span>
+                        <span class="question-text">You want to persuade your class to donate books to children who need them. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Let us share our books with children who do not have any. Our old books can bring them joy and help them learn!</div>
+                        <div class="explanation">Persuasive writing with appeal to help others.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q11</span>
+                        <span class="question-text">Put the sentences in order (baking a cake story)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: A) 2, 4, 1, 3</div>
+                        <div class="explanation">Baking: mixed (2), poured (4), baked (1), decorated (3).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q12</span>
+                        <span class="question-text">Add the best topic sentence (paragraph about stars)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Stars are fascinating objects in space.</div>
+                        <div class="explanation">Topic sentence about stars matches the paragraph.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q13</span>
+                        <span class="question-text">What does "get cold feet" mean?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) She got nervous and did not want to do it</div>
+                        <div class="explanation">"Cold feet" = becoming nervous or scared to do something.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q14</span>
+                        <span class="question-text">Why did Ayesha stay up late?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) She wanted to finish her exciting book</div>
+                        <div class="explanation">"She was on the last chapter of her mystery book!"</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q15</span>
+                        <span class="question-text">Choose the sentence with the correct punctuation.</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) We went to Karachi, Lahore, and Islamabad.</div>
+                        <div class="explanation">Correct capitalization and commas in a list.</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q16</span>
+                        <span class="question-text">Which reason fits best with the opinion and example? (Keeping promises)</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) It builds trust and shows people they can count on you.</div>
+                        <div class="explanation">Connects to the example about friend trusting her.</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="passage-section">
+            <div class="learning-section">
+                <div class="passage-sticky-container">
+                    <div class="passage-sticky-header">
+                        <h4>Reading Passage: "Down in the Burrow" (Q17-18)</h4>
+                        <button class="toggle-passage-btn" onclick="togglePassage(this)">Hide Passage</button>
+                    </div>
+                    <div class="passage-content">
+                        <p>It is cozy down here underground. My home has many tunnels and rooms. I store acorns and nuts for the winter when food is hard to find.</p>
+                        <p>My cheeks can hold lots of food at once! I stuff them full and scurry back to my burrow. When it gets cold outside, I will be safe and warm with plenty to eat.</p>
+                    </div>
+                </div>
+
+                <div class="learning-questions-list">
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q17</span>
+                            <span class="question-text">Who is telling this story?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: B) A squirrel or chipmunk</div>
+                            <div class="explanation">Stores acorns, cheeks hold food, lives in burrow = chipmunk/squirrel.</div>
+                        </div>
+                    </div>
+
+                    <div class="learning-question-item">
+                        <div class="question-row">
+                            <span class="q-number">Q18</span>
+                            <span class="question-text">What clues tell you who the narrator is?</span>
+                            <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                        </div>
+                        <div class="answer-reveal" style="display: none;">
+                            <div class="correct-answer">Correct Answer: A) The narrator stores acorns, has stretchy cheeks, and lives in a burrow</div>
+                            <div class="explanation">Classic chipmunk/squirrel characteristics.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passage-section-header">
                 <h4>Entertainment & Conversation (Q19-20)</h4>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q19</span><span class="correct-answer">Correct Answer: B) Where does a penguin keep its money? In a snow bank!</span></div><p class="explanation">A pun on "snow bank" (pile of snow and bank for money).</p></div>
-                <div class="answer-item"><div class="question-header"><span class="q-number">Q20</span><span class="correct-answer">Correct Answer: B) I am sorry, I will pay attention now.</span></div><p class="explanation">Polite and respectful response to teacher.</p></div>
+            </div>
+
+            <div class="learning-questions-list">
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q19</span>
+                        <span class="question-text">You want to entertain someone with a joke about money. What should you write?</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) Where does a penguin keep its money? In a snow bank!</div>
+                        <div class="explanation">A pun on "snow bank" (pile of snow and bank for money).</div>
+                    </div>
+                </div>
+
+                <div class="learning-question-item">
+                    <div class="question-row">
+                        <span class="q-number">Q20</span>
+                        <span class="question-text">Choose the best reply: Teacher says "Please stop talking and pay attention."</span>
+                        <button class="show-answer-btn" onclick="toggleAnswer(this)">Show Answer</button>
+                    </div>
+                    <div class="answer-reveal" style="display: none;">
+                        <div class="correct-answer">Correct Answer: B) I am sorry, I will pay attention now.</div>
+                        <div class="explanation">Polite and respectful response to teacher.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,5 +384,51 @@
         <p>ICATS English Linguistics Practice Papers - Grade 1-2 (Toddlers)</p>
         <p>For practice purposes only</p>
     </footer>
+
+    <script>
+        function toggleAnswer(btn) {
+            const answerReveal = btn.closest('.learning-question-item').querySelector('.answer-reveal');
+            if (answerReveal.style.display === 'none') {
+                answerReveal.style.display = 'block';
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            } else {
+                answerReveal.style.display = 'none';
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            }
+        }
+
+        function togglePassage(btn) {
+            const passageContent = btn.closest('.passage-sticky-container').querySelector('.passage-content');
+            if (passageContent.style.display === 'none') {
+                passageContent.style.display = 'block';
+                btn.textContent = 'Hide Passage';
+            } else {
+                passageContent.style.display = 'none';
+                btn.textContent = 'Show Passage';
+            }
+        }
+
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(answer => {
+                answer.style.display = 'block';
+            });
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Hide Answer';
+                btn.classList.add('active');
+            });
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-reveal').forEach(answer => {
+                answer.style.display = 'none';
+            });
+            document.querySelectorAll('.show-answer-btn').forEach(btn => {
+                btn.textContent = 'Show Answer';
+                btn.classList.remove('active');
+            });
+        }
+    </script>
 </body>
 </html>
